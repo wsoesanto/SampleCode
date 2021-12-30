@@ -1,4 +1,4 @@
-syntax = "proto2";
+syntax = "proto3";
 
 package hermes.example;
 
@@ -12,5 +12,5 @@ message SayHelloRequest {
 }
 
 message SayHelloResponse {
-
+    string name = 1;
 }

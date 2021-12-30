@@ -11,7 +11,24 @@ cc_binary(
         ":hello_world_service_cc_proto",
         ":hello_world_service_cc_grpc",
         "@com_github_grpc_grpc//:grpc++",
-        "@com_github_grpc_grpc//:grpc++_reflection"
+        "@com_github_grpc_grpc//:grpc++_reflection",
+        "@com_github_google_glog//:glog",
+        "@com_github_gflags_gflags//:gflags",
+    ]
+)
+
+cc_binary(
+    name = "client",
+    srcs = [
+        "client.cc",
+    ],
+    deps = [
+        ":hello_world_service_cc_proto",
+        ":hello_world_service_cc_grpc",
+        "@com_github_grpc_grpc//:grpc++",
+        "@com_github_grpc_grpc//:grpc++_reflection",
+        "@com_github_google_glog//:glog",
+        "@com_github_gflags_gflags//:gflags",
     ]
 )
 

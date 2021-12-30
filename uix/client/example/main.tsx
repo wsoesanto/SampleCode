@@ -5,9 +5,19 @@ import {HelloWorldServicePromiseClient} from 'SampleCode/hermes/example/hello_wo
 
 // render(<html />, document.getElementById('root'));
 
-let client = new  HelloWorldServicePromiseClient("http://localhost:10000/");
-let req = new SayHelloRequest();
-let res = client.sayHello(req);
-// res.then(val: SayHelloResponse => {
-//     console.log(val);
-// });
+async function main() {
+    let client = new  HelloWorldServicePromiseClient("http://127.0.0.1:8080");
+    let req = new SayHelloRequest();
+    
+    try {
+        await client.sayHello(req);
+        console.log('gila ya');
+    } catch (e: any) {
+        console.log('nyebelin');
+        console.log(e);
+    }
+}
+
+if (require.main === module) {
+    main();
+}

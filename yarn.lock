@@ -243,6 +243,11 @@
   resolved "https://registry.yarnpkg.com/@bazel/labs/-/labs-4.5.0.tgz#40a2a48c45f56e6dd94c38ca6e450002e0d4d172"
   integrity sha512-2FZtEmtB3wdO+29aInAxaNZg4VtyYla+pTAOSsmeBjEht0xgaFLiS1FxkL39kczLDqkcYKmGs5azZb6oyzWUmA==
 
+"@bazel/runfiles@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@bazel/runfiles/-/runfiles-4.5.0.tgz#605289f2f466a9b7cf1563411f62b02ac83cd187"
+  integrity sha512-rtmWMebqT0HfyEXnGNPHDtLeNwJlX+QPgPf3yYUtqlAAaqXc8iGyWr+sdvLrgFWaa0EcameXw1RUQ4PFGtUwtA==
+
 "@bazel/typescript@^4.5.0":
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/@bazel/typescript/-/typescript-4.5.0.tgz#8167a5f29bd9e89dabecb0ad62f38c065c48d9f4"
@@ -5688,6 +5693,11 @@ xmlhttprequest-ssl@~1.5.4:
   version "1.5.5"
   resolved "https://registry.yarnpkg.com/xmlhttprequest-ssl/-/xmlhttprequest-ssl-1.5.5.tgz#c2876b06168aadc40e57d97e81191ac8f4398b3e"
   integrity sha1-wodrBhaKrcQOV9l+gRkayPQ5iz4=
+
+xmlhttprequest@^1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz#67fe075c5c24fef39f9d65f5f7b7fe75171968fc"
+  integrity sha1-Z/4HXFwk/vOfnWX197f+dRcZaPw=
 
 "y18n@^3.2.1 || ^4.0.0":
   version "4.0.3"
