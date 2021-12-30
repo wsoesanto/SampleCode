@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AttachedSourceJarManager">
+    <library>ProducerExampleTest-gen_2aeb1892</library>
+    <library>libdatetime_proto-speed-hjar_48f08f56</library>
+    <library>libproto_type_adapter-hjar_a49127ce</library>
+    <library>component_5e0d7a99</library>
+    <library>libserver-hjar_ea0a78c9</library>
+    <library>libbase_processor-hjar_b61381a4</library>
+    <library>libannotations-gen_56dedd02</library>
+    <library>libserver-hjar_486618d8</library>
+    <library>libMain-gen_5e0d7a99</library>
+    <library>libimpl-gen_9e8330d4</library>
+    <library>libservice-gen_ea0a78c9</library>
+    <library>liblite-hjar_fb5cd0ab</library>
+    <library>libproto-hjar_64cd770c</library>
+    <library>libheaders_proto-speed-hjar_14af7b41</library>
+    <library>libservice_proto-speed-hjar_56435b71</library>
+    <library>libapi-hjar_76465ba0</library>
+    <library>libcomponents-hjar_879ecf20</library>
+    <library>Main_5e0d7a99</library>
+    <library>libdefine_component-hjar_72f51845</library>
+    <library>libhilt_java_app-hjar_8b0045ac</library>
+    <library>libspi-hjar_6f105430</library>
+    <library>libapi-hjar_e5be47f2</library>
+    <library>libdependency-gen_ad566386</library>
+    <library>service_kt_grpc-kt-java_56435b71</library>
+    <library>libcore-hjar_fb5cd0ab</library>
+    <library>libapi-hjar_6c709841</library>
+    <library>libmoney_proto-speed-hjar_48f08f56</library>
+    <library>libnetty-hjar_135df549</library>
+    <library>protobuf-java-3.11.3-ijar_f925f9b3</library>
+    <library>libservice-gen_4023749a</library>
+    <library>libexample_service_client_module-gen_ea0a78c9</library>
+    <library>libproto_type_adapter-hjar_62497430</library>
+    <library>libserver-hjar_821511ad</library>
+    <library>libstub-hjar_d212f5d6</library>
+    <library>libcore-hjar_40ceba93</library>
+    <library>main-gen_c388bcc8</library>
+    <library>libmodel-hjar_ebf700ad</library>
+    <library>libstub-hjar_21aaaf67</library>
+    <library>stub-kt-java_771d0e57</library>
+    <library>libinstall_in-hjar_72f51845</library>
+    <library>libgenerated_component-hjar_25a18d47</library>
+    <library>Client-gen_ea0a78c9</library>
+    <library>libannotations-hjar_486618d8</library>
+    <library>libjgit-hjar_ef01287b</library>
+    <library>libservice_java_grpc-hjar_60e1439</library>
+    <library>libservice_java_grpc-hjar_56435b71</library>
+    <library>libservice_proto-speed-hjar_60e1439</library>
+    <library>libserver_component-gen_ea0a78c9</library>
+    <library>libservice_proto-speed-hjar_ad566386</library>
+    <library>Main-gen_5e0d7a99</library>
+  </component>
+  <component name="BlazeImportSettings">
+    <option name="buildSystem" value="Bazel" />
+    <option name="locationHash" value="SampleCode-464aebfe" />
+    <option name="projectDataDirectory" value="$PROJECT_DIR$" />
+    <option name="projectName" value="SampleCode" />
+    <option name="projectViewFile" value="$PROJECT_DIR$/.bazelproject" />
+    <option name="workspaceRoot" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="047189c9-478d-4836-a989-4c66c36eea13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../alpaca/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alpaca/backtest_testing.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alpaca/get_account_test.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alpaca/header.cue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alpaca/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alpaca/main/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alpaca/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../alpaca/service.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cargo/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../devtools/bazel/rbe/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../devtools/rust/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../devtools/yaml/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../devtools/yaml/yaml_validator_test.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fx/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fx/java/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fx/java/build_defs.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fx/java/dependency_injection.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fx/server/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../fx/server/headers.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/alpaca/AccountRetrieval.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/alpaca/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/bazel/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/bazel/Label.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/bazel/LabelFlagParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/bazel/LabelsFlagParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/repo/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/repo/Repos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/example/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/example/ExampleModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/FxManagedChannelBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/Options.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/ThreadSafe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/ThreadSafeAnalysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/ThreadSafeChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/ThreadSafeProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/WellKnownThreadSafety.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/example/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/example/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/example/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/example/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/HeadersInterceptor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/RequestComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/RequestComponentBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/RequestHeaderReader.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/RequestScoped.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/ResponseHeaderWriter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/ServerModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/ServiceComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/StartupTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/concurrent/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/concurrent/ConcurrentModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/concurrent/module.textproto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/conformance/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/conformance/FullBindingGraphValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/conformance/ModuleDocumentationValidationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/di/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/di/ProvisionInspector.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/logging/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/logging/LoggingModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/rxjava/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/rxjava/RxJavaInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/rxjava/RxJavaModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/rxjava/RxJavaStartup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/trace/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/trace/TraceModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/trace/TraceRxJavaInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/trace/TraceStartup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/ReleaseInfos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/ChronoModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/TimeSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/testing/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/testing/FakeClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/testing/TestingModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/processor/Annotations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/processor/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/processor/ProcessorModule.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/AbstractPromise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/ExposedStatePromise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/FutureBasedPromise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/ImmediatePromise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/Promise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/PromiseExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/PromiseQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/PromiseRuntime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/Promises.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/java/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/java/OneVersionTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/Calls.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/HttpClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/HttpProtoRpcChannel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/PostRequestBodyBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/Protos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/proto/AsyncService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/proto/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/proto/HttpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/rpc/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/rpc/HttpController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/JsonModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/gson/Annotations.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/gson/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/gson/GsonModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/type/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/type/MoneyAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/type/TimestampAdapter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/testing/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/testing/io/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/testing/io/Paths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/vcs/git/hooks/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/vcs/git/hooks/PreCommit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/yaml/YamlValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/dagger/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/dagger/ProducerExampleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/fx/client/stub/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/fx/client/stub/GeneratedStubProcessorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/fx/client/stub/Hello.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/fx/stub/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/proto/type/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/proto/type/MoneyAdapterTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/http/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/http/http.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/http/http.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/http/main/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/http/main/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/http/mapper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/http/mapper_sample.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/http/mapper_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../net/http/rpc.proto" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quantiacs/gettingstarted/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../quantiacs/gettingstarted/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repo/crate/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repo/crate/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service/example/envoy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service/example/main.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service/example/main/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service/example/main/server.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service/example/rust/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service/example/rust/coba1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service/example/rust/coba2.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../service/example/rust/server.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/auto/ext/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/cc/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/cc/deps.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/cpr/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/cpr/cpr.BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/cue/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/cue/deps.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/curl/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/curl/curl.BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/go/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/go/deps.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/grpc/rules.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/gson/ext/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/gson/gson.BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/java/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/java/deps.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/openssl/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/openssl/openssl.BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/com_google_protobuf_javalite.BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/com_google_protobuf_protobuf_java.BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/deps.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/jar/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/python/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/python/deps.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/rust/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/rust/deps.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/zlib/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../third_party/zlib/zlib.BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uix/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uix/client/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uix/client/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uix/example/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uix/example/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uix/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uix/server/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../uix/serving/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vcs/git/hooks/BUILD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../vcs/git/hooks/pre-commit" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Go Application" />
+        <option value="Go File" />
+        <option value="AnnotationType" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Kotlin File" />
+        <option value="Class" />
+        <option value="Kotlin Annotation" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="G3PluginsProjectSettings">
+    <appliedSettings>
+      <entry key="LinkifyInternalShortlinks" value="true" />
+      <entry key="RecognizedNullableAnnotations" value="true" />
+    </appliedSettings>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.17/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="JupyterTrust" id="51da6a56-4d62-49d3-af7a-e5a9dc11d955" />
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="XOGHrQyt" />
+  </component>
+  <component name="ProjectId" id="1Y8OiyJ4CYUDDmMOrKbZpmH4so7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="additional_languages_helper_suppressed_go" value="true" />
+    <property name="additional_languages_helper_suppressed_kotlin" value="true" />
+    <property name="additional_languages_helper_suppressed_python" value="true" />
+    <property name="additional_languages_helper_suppressed_typescript" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="go.vendoring.notification.had.been.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/../java/com/elfin/proto/type" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../third_party/protobuf" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/../node_modules/typescript/lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.elfin.fx.server" />
+      <recent name="com.elfin.fx.server.service" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.elfin.proto.type" />
+      <recent name="com.elfin.fx.client.stub" />
+    </key>
+    <key name="MoveInnerDialog.RECENTS_KEY">
+      <recent name="com.elfin.proto.type" />
+      <recent name="com.elfin.fx.client" />
+      <recent name="com.elfin.devtools.java.flag" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="java.com.elfin.fx.client.stub" />
+      <recent name="com.elfin" />
+      <recent name="com.elfin.service" />
+      <recent name="com.elfin.devtools.java.junit" />
+      <recent name="com.elfin.devtools.java.flag" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../third_party/protobuf" />
+      <recent name="$PROJECT_DIR$/../third_party/cc" />
+      <recent name="$PROJECT_DIR$/../third_party/cue" />
+      <recent name="$PROJECT_DIR$/../third_party/rust" />
+      <recent name="$PROJECT_DIR$/../third_party/python" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.elfin.service.example" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../fx/server" />
+      <recent name="$PROJECT_DIR$/../third_party/protobuf" />
+      <recent name="$PROJECT_DIR$/.." />
+      <recent name="$PROJECT_DIR$/../service/example/main" />
+      <recent name="$PROJECT_DIR$/../net/http/main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Bazel Command.Bazel run example:main">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel run :Main" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="run" kind="java_library">
+        <blaze-target>//java/com/elfin/fx/server:Main</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel run :buildifier" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="run">
+        <blaze-target>//:buildifier</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel run :gazelle" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="run">
+        <blaze-target>//:gazelle</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel run example:main" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true" nameIsGenerated="true">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" kind="kt_jvm_binary" blaze-command="run">
+        <blaze-target>//java/com/elfin/fx/example:main</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel run uix:main_binary" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="run">
+        <blaze-target>//uix:main_binary</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel test MoneyAdapterTest" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="test" kind="kt_jvm_library" context-element="$PROJECT_DIR$/../javatests/com/elfin/proto/type/MoneyAdapterTest.kt#MoneyAdapterTest">
+        <blaze-target>//javatests/com/elfin/proto/type:MoneyAdapterTest</blaze-target>
+        <blaze-user-flag>--test_filter=com.elfin.proto.type.MoneyAdapterTest</blaze-user-flag>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel test ProducerExampleTest" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="test" kind="java_test" context-element="$PROJECT_DIR$/../javatests/com/elfin/dagger/ProducerExampleTest.java#com.elfin.dagger.ProducerExampleTest">
+        <blaze-target>//javatests/com/elfin/dagger:ProducerExampleTest</blaze-target>
+        <blaze-user-flag>--test_filter=com.elfin.dagger.ProducerExampleTest#</blaze-user-flag>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel test ProducerExampleTest.getName" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="test" kind="java_test" context-element="$PROJECT_DIR$/../javatests/com/elfin/dagger/ProducerExampleTest.java#getName">
+        <blaze-target>//javatests/com/elfin/dagger:ProducerExampleTest</blaze-target>
+        <blaze-user-flag>--test_sharding_strategy=disabled</blaze-user-flag>
+        <blaze-user-flag>--test_filter=com.elfin.dagger.ProducerExampleTest#getName$</blaze-user-flag>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel test dagger:ProducerExampleTest" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true" nameIsGenerated="true">
+      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" kind="java_test" blaze-command="test">
+        <blaze-target>//javatests/com/elfin/dagger:ProducerExampleTest</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Bazel Command.Bazel run :buildifier" />
+      <item itemvalue="Bazel Command.Bazel run :gazelle" />
+      <item itemvalue="Bazel Command.Bazel run :Main" />
+      <item itemvalue="Bazel Command.Bazel run uix:main_binary" />
+      <item itemvalue="Bazel Command.Bazel test MoneyAdapterTest" />
+      <item itemvalue="Bazel Command.Bazel test ProducerExampleTest" />
+      <item itemvalue="Bazel Command.Bazel test dagger:ProducerExampleTest" />
+      <item itemvalue="Bazel Command.Bazel test ProducerExampleTest.getName" />
+      <item itemvalue="Bazel Command.Bazel run example:main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Bazel Command.Bazel run example:main" />
+        <item itemvalue="Bazel Command.Bazel test ProducerExampleTest" />
+        <item itemvalue="Bazel Command.Bazel test ProducerExampleTest.getName" />
+        <item itemvalue="Bazel Command.Bazel test dagger:ProducerExampleTest" />
+        <item itemvalue="Bazel Command.Bazel test ProducerExampleTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="version" value="2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="047189c9-478d-4836-a989-4c66c36eea13" name="Default Changelist" comment="" />
+      <created>1571107268706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571107268706</updated>
+      <workItem from="1571107272222" duration="2318000" />
+      <workItem from="1571192543989" duration="46000" />
+      <workItem from="1571192631443" duration="1758000" />
+      <workItem from="1571225572278" duration="528000" />
+      <workItem from="1571226113948" duration="2106000" />
+      <workItem from="1575256437906" duration="118000" />
+      <workItem from="1575256572180" duration="100000" />
+      <workItem from="1575256722507" duration="4022000" />
+      <workItem from="1579143387011" duration="3555000" />
+      <workItem from="1582320892187" duration="14000" />
+      <workItem from="1582320928371" duration="2077000" />
+      <workItem from="1582339161784" duration="23000" />
+      <workItem from="1582339206816" duration="52000" />
+      <workItem from="1582339274547" duration="27272000" />
+      <workItem from="1582688254437" duration="454000" />
+      <workItem from="1582857478616" duration="43000" />
+      <workItem from="1582857620493" duration="29000" />
+      <workItem from="1582857662163" duration="4967000" />
+      <workItem from="1582870997788" duration="3217000" />
+      <workItem from="1582967539739" duration="14040000" />
+      <workItem from="1583072956480" duration="14187000" />
+      <workItem from="1583113070950" duration="1462000" />
+      <workItem from="1583197723783" duration="554000" />
+      <workItem from="1583366719464" duration="4469000" />
+      <workItem from="1583474593655" duration="1270000" />
+      <workItem from="1584160973071" duration="17834000" />
+      <workItem from="1584226587059" duration="30409000" />
+      <workItem from="1584290079416" duration="5025000" />
+      <workItem from="1584317619571" duration="482000" />
+      <workItem from="1584371352155" duration="805000" />
+      <workItem from="1584372337258" duration="1769000" />
+      <workItem from="1584480261060" duration="940000" />
+      <workItem from="1584482852140" duration="1932000" />
+      <workItem from="1584507567046" duration="783000" />
+      <workItem from="1584858006288" duration="1473000" />
+      <workItem from="1584881232280" duration="3046000" />
+      <workItem from="1584906383762" duration="3222000" />
+      <workItem from="1585168549503" duration="902000" />
+      <workItem from="1585490082341" duration="38000" />
+      <workItem from="1585490133650" duration="4093000" />
+      <workItem from="1585505274310" duration="1787000" />
+      <workItem from="1585521041980" duration="5512000" />
+      <workItem from="1585542331545" duration="3537000" />
+      <workItem from="1585588011963" duration="1138000" />
+      <workItem from="1585633302604" duration="632000" />
+      <workItem from="1585965307249" duration="1716000" />
+      <workItem from="1585967443786" duration="8211000" />
+      <workItem from="1587276618284" duration="774000" />
+      <workItem from="1587302643960" duration="54000" />
+      <workItem from="1587825206812" duration="5503000" />
+      <workItem from="1588992504635" duration="873000" />
+      <workItem from="1588993515450" duration="8534000" />
+      <workItem from="1591406128849" duration="1263000" />
+      <workItem from="1592585790638" duration="671000" />
+      <workItem from="1593195992482" duration="458000" />
+      <workItem from="1593308350994" duration="1401000" />
+      <workItem from="1593649537658" duration="3854000" />
+      <workItem from="1593655806626" duration="30709000" />
+      <workItem from="1593725747406" duration="1005000" />
+      <workItem from="1593814004766" duration="1380000" />
+      <workItem from="1593820434747" duration="7329000" />
+      <workItem from="1593839196975" duration="7163000" />
+      <workItem from="1594040965603" duration="873000" />
+      <workItem from="1596078197415" duration="323000" />
+      <workItem from="1596078557057" duration="35000" />
+      <workItem from="1596078630136" duration="4729000" />
+      <workItem from="1596288621505" duration="255000" />
+      <workItem from="1596594260328" duration="1240000" />
+      <workItem from="1596755631751" duration="1854000" />
+      <workItem from="1596757515328" duration="5825000" />
+      <workItem from="1596769019667" duration="4533000" />
+      <workItem from="1596852591461" duration="7145000" />
+      <workItem from="1596893450072" duration="11000" />
+      <workItem from="1597403647120" duration="1164000" />
+      <workItem from="1597464019137" duration="1989000" />
+      <workItem from="1598656358812" duration="271000" />
+      <workItem from="1598656688357" duration="26838000" />
+      <workItem from="1599007940375" duration="3337000" />
+      <workItem from="1599182032752" duration="10782000" />
+      <workItem from="1599252219687" duration="11051000" />
+      <workItem from="1599355459310" duration="1248000" />
+      <workItem from="1599832032796" duration="1090000" />
+      <workItem from="1600484024604" duration="1018000" />
+      <workItem from="1602368501980" duration="187000" />
+      <workItem from="1602368714423" duration="17016000" />
+      <workItem from="1602390531586" duration="7975000" />
+      <workItem from="1602531854459" duration="3138000" />
+      <workItem from="1602645937413" duration="7056000" />
+      <workItem from="1603511956778" duration="5848000" />
+      <workItem from="1603538991317" duration="9201000" />
+      <workItem from="1603770486445" duration="501000" />
+      <workItem from="1603800642334" duration="749000" />
+      <workItem from="1604283583049" duration="4825000" />
+      <workItem from="1604432688879" duration="3190000" />
+      <workItem from="1604436968274" duration="1512000" />
+      <workItem from="1604465859000" duration="4635000" />
+      <workItem from="1604517140395" duration="4795000" />
+      <workItem from="1604529051808" duration="10666000" />
+      <workItem from="1604724600633" duration="6005000" />
+      <workItem from="1605393223642" duration="7596000" />
+      <workItem from="1605416116418" duration="5671000" />
+      <workItem from="1605466996462" duration="13685000" />
+      <workItem from="1605607184472" duration="5796000" />
+      <workItem from="1605622792021" duration="3145000" />
+      <workItem from="1605632836032" duration="1119000" />
+      <workItem from="1605670627135" duration="3552000" />
+      <workItem from="1605837487349" duration="3304000" />
+      <workItem from="1605862398755" duration="4170000" />
+      <workItem from="1606014690907" duration="3816000" />
+      <workItem from="1606022511337" duration="3159000" />
+      <workItem from="1606063187588" duration="3455000" />
+      <workItem from="1606321987981" duration="16983000" />
+      <workItem from="1606363471541" duration="19036000" />
+      <workItem from="1606872615185" duration="614000" />
+      <workItem from="1606951901388" duration="740000" />
+      <workItem from="1609897559305" duration="5453000" />
+      <workItem from="1609955245729" duration="4052000" />
+      <workItem from="1609972249434" duration="8216000" />
+      <workItem from="1610145646004" duration="642000" />
+      <workItem from="1610227915424" duration="7803000" />
+      <workItem from="1610406355163" duration="2977000" />
+      <workItem from="1610486244291" duration="3385000" />
+      <workItem from="1610493926884" duration="4218000" />
+      <workItem from="1610511823899" duration="1261000" />
+      <workItem from="1610570736127" duration="4179000" />
+      <workItem from="1610597768009" duration="3854000" />
+      <workItem from="1610657830445" duration="6781000" />
+      <workItem from="1620515909058" duration="9109000" />
+      <workItem from="1620567556069" duration="974000" />
+      <workItem from="1620585177946" duration="1808000" />
+      <workItem from="1621743909949" duration="1592000" />
+      <workItem from="1622260093506" duration="16150000" />
+      <workItem from="1622326595687" duration="3706000" />
+      <workItem from="1622336300414" duration="777000" />
+      <workItem from="1622350324101" duration="7455000" />
+      <workItem from="1622956485294" duration="3212000" />
+      <workItem from="1622985491752" duration="2130000" />
+      <workItem from="1623007005987" duration="8494000" />
+      <workItem from="1630940830330" duration="723000" />
+      <workItem from="1632360403495" duration="1891000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../third_party/rules_nodejs/packages/terser/test/sourcemap/src1.js.map" />
+        <option value="$PROJECT_DIR$/../third_party/rules_nodejs/packages/terser/test/sourcemap/src1.js" />
+        <option value="$PROJECT_DIR$/../third_party/rules_nodejs/packages/terser/test/inline_sourcemap/input.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/.blaze/libraries/auto-value-1.7_2bc945f9.jar!/com/google/auto/value/extension/AutoValueExtension.class</url>
+          <line>87</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/.blaze/libraries/libapi-src_7d511382-src.jar!/io/grpc/Metadata.java</url>
+          <line>741</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/.blaze/libraries/libapi-src_7d511382-src.jar!/io/grpc/Metadata.java</url>
+          <line>744</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$PROJECT_DIR$/.blaze/libraries/libapi-src_7d511382-src.jar!/io/grpc/Metadata.java</url>
+          <line>742</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/server/service/example/ExampleServiceClientModule.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java/com/elfin/devtools/java/flag/Flags.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java/com/elfin/repo/crates/Dependencies.java</url>
+          <line>96</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java/com/elfin/repo/crates/Dependencies.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>190</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>191</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>193</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>214</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>200</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>208</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>210</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>204</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>202</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>201</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
+          <line>184</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/execroot/SampleCode/bazel-out/darwin-fastbuild/bin/external/com_google_gson/libproto_type_adapter-src.jar!/com/google/gson/protobuf/ProtoTypeAdapter.java</url>
+          <line>307</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/execroot/SampleCode/bazel-out/darwin-fastbuild/bin/external/com_google_gson/libproto_type_adapter-src.jar!/com/google/gson/protobuf/ProtoTypeAdapter.java</url>
+          <line>303</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/execroot/SampleCode/bazel-out/darwin-fastbuild/bin/external/com_google_gson/libproto_type_adapter-src.jar!/com/google/gson/protobuf/ProtoTypeAdapter.java</url>
+          <line>302</line>
+          <option name="timeStamp" value="84" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/execroot/SampleCode/bazel-out/darwin-fastbuild/bin/external/com_google_gson/libproto_type_adapter-src.jar!/com/google/gson/protobuf/ProtoTypeAdapter.java</url>
+          <line>306</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>537</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>538</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>539</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>541</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>543</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>547</line>
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>549</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>551</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>554</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>556</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
+          <line>559</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="BlazeCommandRunConfigurationType">
+        <watch expression="context.get(Job.Key).job.children" language="kotlin" custom="import kotlinx.coroutines.Job,import kotlinx.coroutines.job" />
+        <watch expression="continuation.javaClass" language="kotlin" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>

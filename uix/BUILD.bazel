@@ -1,0 +1,16 @@
+load("@npm//@bazel/labs:index.bzl", "ts_proto_library")
+
+proto_library(
+    name = "serving_context_proto",
+    srcs = [
+        "serving_context.proto",
+    ]
+)
+
+ts_proto_library(
+    name = "serving_context_ts_proto",
+    proto = ":serving_context_proto",
+    visibility = [
+        "//visibility:public",
+    ]
+)

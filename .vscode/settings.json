@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "string": "cpp",
+        "functional": "cpp",
+        "cstdio": "cpp"
+    },
+    "files.exclude": {
+        // There is no need to display git changes.
+        ".git": true,
+        // This is created when we're opening the directory using Mac Finder.
+        ".DS_Store": true,
+        // node_modules directory is generated from package.json. Mostly you don't need it?
+        // "node_modules": true,
+        // No need to display all these symlink files. 
+        "bazel-*": true,
+        "node_modules": true
+    },
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "javascript.implicitProjectConfig.experimentalDecorators": true
+}

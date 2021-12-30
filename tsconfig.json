@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": ["DOM", "ES5", "ES6"],
+    "module": "CommonJS",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      // Replace <workspace-name> with the name of your workspace
+      "SampleCode/*": [
+        "*", // Enables absolute paths for src files in your project
+        "bazel-bin/*" // Enables referencing generate protos with absolute paths
+      ]
+    }
+  },
+}

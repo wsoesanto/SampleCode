@@ -1,0 +1,62 @@
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
+load("@npm//webpack-cli:index.bzl", webpack = "webpack_cli")
+load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+
+
+ts_project(
+    name = "main",
+    srcs = [
+        "main.tsx",
+    ],
+    visibility = [
+        "//visibility:public",
+    ],
+    link_workspace_root = True,
+    deps = [
+        "@npm//@types/react",
+        "@npm//@types/react-dom",
+        "@npm//@types/express",
+        "@npm//grpc-web",
+        "@npm//@types/google-protobuf",
+        "//hermes/example:hello_world_service_ts_proto",
+    ],
+    tsconfig = "//:tsconfig"
+)
+
+nodejs_binary(
+    name = "example",
+    link_workspace_root = True,
+    data = [
+        ":main",
+    ],
+    entry_point = ":main",
+)
+
+webpack(
+    name = "bundle",
+    outs = ["app.bundle.js"],
+    args = [
+        "./$(location :main)",
+        "--config",
+        "./$(location :webpack)",
+        "-o",
+        "$@",
+    ],
+    link_workspace_root = True,
+    data = [
+        ":main",
+        ":webpack",
+        "@npm//:node_modules",
+    ],
+)
+ts_project(
+    name = "webpack",
+    srcs = [
+        "webpack.config.ts",
+    ],
+    deps = [
+        "@npm//@types/webpack",
+    ],
+    link_workspace_root = True,
+    tsconfig = "//:tsconfig"
+)

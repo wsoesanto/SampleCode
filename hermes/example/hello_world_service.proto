@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package hermes.example;
+
+service HelloWorldService {
+
+    rpc SayHello(SayHelloRequest) returns (SayHelloResponse) {}
+}
+
+message SayHelloRequest {
+
+}
+
+message SayHelloResponse {
+
+}

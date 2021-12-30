@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach nodejs_binary",
+            "internalConsoleOptions": "neverOpen",
+            "sourceMapPathOverrides": {
+                "../*": "${workspaceRoot}/*",
+                "../../*": "${workspaceRoot}/*",
+                "../../../*": "${workspaceRoot}/*",
+                "../../../../*": "${workspaceRoot}/*",
+                "../../../../../*": "${workspaceRoot}/*"
+            },
+        }        
+    ]
+}
