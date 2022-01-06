@@ -10,6 +10,20 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 #     path = "/Users/willys/Library/Android/sdk",  # Optional. Can be omitted if `ANDROID_HOME` environment variable is set.
 # )
 
+git_repository(
+    name = "io_grpc_grpc_java",
+    branch = "master",
+    remote = "https://github.com/grpc/grpc-java",
+)
+
+git_repository(
+    name = "com_github_grpc_grpc_kotlin",
+    branch = "master",
+    remote = "https://github.com/grpc/grpc-kotlin",
+)
+
+load("@com_github_grpc_grpc_kotlin//:repositories.bzl", "grpc_kt_repositories")
+grpc_kt_repositories()
 
 git_repository(
     name = "build_bazel_rules_swift",
@@ -182,15 +196,6 @@ git_repository(
     branch = "main",
     remote = "https://github.com/google/re2",
 )
- 
-git_repository(
-    name = "com_github_grpc_grpc_kotlin",
-    branch = "master",
-    remote = "https://github.com/grpc/grpc-kotlin",
-)
-
-load("@com_github_grpc_grpc_kotlin//:repositories.bzl", "grpc_kt_repositories")
-grpc_kt_repositories()
 
 git_repository(
     name = "io_bazel_rules_closure",
@@ -283,12 +288,6 @@ http_archive(
     sha256 = "21bc744fb7f2fa701ee8db339ded7dce4f975d0d55837a97be7d46e8382dea5a",
     strip_prefix = "glog-0.5.0",
     urls = ["https://github.com/google/glog/archive/v0.5.0.zip"],
-)
-
-git_repository(
-    name = "io_grpc_grpc_java",
-    branch = "master",
-    remote = "https://github.com/grpc/grpc-java",
 )
 
 # load("@io_grpc_grpc_java//:repositories.bzl", "grpc_java_repositories")

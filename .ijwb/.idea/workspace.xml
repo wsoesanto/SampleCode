@@ -46,6 +46,7 @@
     <library>Client-gen_ea0a78c9</library>
     <library>libannotations-hjar_486618d8</library>
     <library>libjgit-hjar_ef01287b</library>
+    <library>hello_world_service_kt_jvm_grpc-kt-java_3e6ccb80</library>
     <library>libservice_java_grpc-hjar_60e1439</library>
     <library>libservice_java_grpc-hjar_56435b71</library>
     <library>libservice_proto-speed-hjar_60e1439</library>
@@ -69,25 +70,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="047189c9-478d-4836-a989-4c66c36eea13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repo/maven/jar/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.bazelignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.bazelignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.blaze/modules/.project-data-dir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.blaze/modules/.project-data-dir.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MODULE.bazel" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../WORKSPACE" beforeDir="false" afterPath="$PROJECT_DIR$/../WORKSPACE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../hermes/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../hermes/example/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hermes/example/hello_world_service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../hermes/example/hello_world_service.proto" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hermes/example/main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/../hermes/example/main.cc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repo/maven/deps.bzl" beforeDir="false" afterPath="$PROJECT_DIR$/../repo/maven/deps.bzl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uix/client/example/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../uix/client/example/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +174,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.language.Kotlin" />
     <property name="show.migrate.to.gradle.popup" value="false" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/../node_modules/typescript/lib" />
   </component>
@@ -496,7 +484,7 @@
       <workItem from="1630940830330" duration="723000" />
       <workItem from="1632360403495" duration="1891000" />
       <workItem from="1641437943560" duration="11863000" />
-      <workItem from="1641473532785" duration="2547000" />
+      <workItem from="1641473532785" duration="4482000" />
     </task>
     <servers />
   </component>
@@ -728,5 +716,9 @@
         <watch expression="continuation.javaClass" language="kotlin" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

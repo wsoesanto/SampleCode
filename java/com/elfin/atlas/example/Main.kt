@@ -3,18 +3,18 @@
 
 package com.elfin.atlas.example
 
-import com.hermes.example.HelloWorldServiceGrpc
+import com.hermes.example.HelloWorldServiceGrpcKt
 import com.hermes.example.SayHelloRequest
 import com.hermes.example.SayHelloResponse
+import com.hermes.example.sayHelloResponse
 import io.grpc.ServerBuilder
 import io.grpc.stub.StreamObserver
 
-class HelloWorldImplementation : HelloWorldServiceGrpc.HelloWorldServiceImplBase() {
-
-  override fun sayHello(request: SayHelloRequest,
-                        responseObserver: StreamObserver<SayHelloResponse>) {
-    responseObserver.onNext(SayHelloResponse.newBuilder().setName("Muahaha").build())
-    responseObserver.onCompleted()
+class HelloWorldImplementation : HelloWorldServiceGrpcKt.HelloWorldServiceCoroutineImplBase() {
+  override suspend fun sayHello(request: SayHelloRequest): SayHelloResponse {
+    return sayHelloResponse {
+      name = "Muahaha"
+    }
   }
 }
 

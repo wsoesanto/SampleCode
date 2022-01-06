@@ -5,6 +5,8 @@ kt_jvm_binary(
     srcs = ["Main.kt"],
     main_class = "com.elfin.atlas.example.Main",
     deps = [
+        "//hermes/example:hello_world_service_java_proto",
+        "//hermes/example:hello_world_service_java_grpc",
         "//hermes/example:hello_world_service_kt_jvm_grpc",
         "//hermes/example:hello_world_service_kt_jvm_proto",
         "@io_grpc_grpc_java//api",

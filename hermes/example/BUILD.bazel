@@ -88,10 +88,16 @@ java_grpc_library(
 kt_jvm_proto_library(
     name = "hello_world_service_kt_jvm_proto",
     deps = [":hello_world_service_proto"],
+    visibility = [
+        "//visibility:public",
+    ]
 )
 
 kt_jvm_grpc_library(
     name = "hello_world_service_kt_jvm_grpc",
     srcs = [":hello_world_service_proto"],
     deps = [":hello_world_service_kt_jvm_proto"],
+    visibility = [
+        "//visibility:public",
+    ]
 )
