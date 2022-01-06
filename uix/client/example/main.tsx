@@ -19,7 +19,7 @@ async function main() {
 if (require.main === module) {
 
     performance.mark('a');
-    Promise.all([...Array(1000).keys()].map(x => {
+    Promise.all([...Array(1).keys()].map(x => {
         return main();
     })).then(value => {
         performance.mark('b');

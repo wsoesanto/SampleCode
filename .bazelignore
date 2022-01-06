@@ -1,1 +1,7 @@
-third_party/cue
+.aswb
+.cache
+.ijwb
+.vscode
+external
+node_modules
+repo/maven/jar

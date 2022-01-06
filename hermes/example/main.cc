@@ -12,7 +12,7 @@
 class ServiceImpl final : public hermes::example::HelloWorldService::Service {
 public:
     grpc::Status SayHello(grpc::ServerContext* context, const hermes::example::SayHelloRequest* req, hermes::example::SayHelloResponse* res) override {
-        LOG(INFO) << "Getting called";
+        // LOG(INFO) << "Getting called";
         hermes::example::SayHelloResponse response;
         response.set_name("Muahaha");
         *res = response;

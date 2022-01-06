@@ -2,6 +2,9 @@ syntax = "proto3";
 
 package hermes.example;
 
+option java_package = "com.hermes.example";
+option java_multiple_files = true;
+
 service HelloWorldService {
 
     rpc SayHello(SayHelloRequest) returns (SayHelloResponse) {}

@@ -54,6 +54,8 @@ _MAVEN_DEPS = [
     "com.ryanharter.auto.value:auto-value-gson-runtime:1.3.0",
     "com.squareup:javapoet:1.12.1",
     "com.squareup:kotlinpoet:1.6.0",
+    "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5",
+    "org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.3.5",
     "com.squareup.okhttp3:okhttp:4.4.1",
     "com.vladsch.flexmark:flexmark:0.34.18",
     "com.vladsch.flexmark:flexmark-ext-abbreviation:0.34.18",
@@ -110,6 +112,7 @@ _MAVEN_DEPS = [
     "eu.medsea.mimeutil:mime-util:2.1.3",
     "io.dropwizard.metrics:metrics-core:4.1.5",
     "io.grpc:grpc-context:1.38.0",
+    "io.grpc:grpc-netty:1.38.0",
     #    "io.netty:netty:3.10.5.Final",
     "io.netty:netty-all:4.1.65.Final",
     "io.opentracing.contrib:opentracing-rxjava-3:0.1.4",
@@ -191,6 +194,8 @@ _MAVEN_DEPS = [
     "org.slf4j:slf4j-ext:1.7.26",
     "org.slf4j:slf4j-log4j12:1.7.26",
     "org.tukaani:xz:1.8",
+    "com.google.j2objc:j2objc-annotations:1.3",
+    "com.google.protobuf:protobuf-kotlin:3.17.0-rc-2",
 ]
 
 def _get_bazel_maven_target_name(name):
@@ -228,10 +233,15 @@ def maven_deps_install():
     default_visibility = ["//visibility:public"],
 )
 java_library(
+    name = "jar",
+    exports = ["@maven//:%s"]
+)
+
+java_library(
     name = "%s",
     exports = ["@maven//:%s"]
 )
-                """ % (name, name),
+                """ % (name, name, name),
                 path = "repo/maven",
                 workspace_file = "WORKSPACE",
             )

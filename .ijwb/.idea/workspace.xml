@@ -42,6 +42,7 @@
     <library>stub-kt-java_771d0e57</library>
     <library>libinstall_in-hjar_72f51845</library>
     <library>libgenerated_component-hjar_25a18d47</library>
+    <library>libhello_world_service_java_grpc-hjar_3e6ccb80</library>
     <library>Client-gen_ea0a78c9</library>
     <library>libannotations-hjar_486618d8</library>
     <library>libjgit-hjar_ef01287b</library>
@@ -52,6 +53,9 @@
     <library>libservice_proto-speed-hjar_ad566386</library>
     <library>Main-gen_5e0d7a99</library>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BlazeImportSettings">
     <option name="buildSystem" value="Bazel" />
     <option name="locationHash" value="SampleCode-464aebfe" />
@@ -60,206 +64,30 @@
     <option name="projectViewFile" value="$PROJECT_DIR$/.bazelproject" />
     <option name="workspaceRoot" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="BlazeSyncStatusState">
+    <option name="dirty" value="true" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="047189c9-478d-4836-a989-4c66c36eea13" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../alpaca/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../alpaca/backtest_testing.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../alpaca/get_account_test.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../alpaca/header.cue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../alpaca/main.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../alpaca/main/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../alpaca/main/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../alpaca/service.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../cargo/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../devtools/bazel/rbe/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../devtools/rust/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../devtools/yaml/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../devtools/yaml/yaml_validator_test.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fx/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fx/java/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fx/java/build_defs.bzl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fx/java/dependency_injection.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fx/server/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../fx/server/headers.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/alpaca/AccountRetrieval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/alpaca/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/bazel/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/bazel/Label.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/bazel/LabelFlagParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/bazel/LabelsFlagParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/repo/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/devtools/repo/Repos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/example/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/example/ExampleModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/FxManagedChannelBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/client/stub/Options.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/ThreadSafe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/ThreadSafeAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/ThreadSafeChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/ThreadSafeProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/WellKnownThreadSafety.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/example/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/concurrent/threadsafe/example/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/example/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/example/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/HeadersInterceptor.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/RequestComponent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/RequestComponentBuilder.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/RequestHeaderReader.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/RequestScoped.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/ResponseHeaderWriter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/ServerModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/ServiceComponent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/StartupTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/concurrent/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/concurrent/ConcurrentModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/concurrent/module.textproto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/conformance/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/conformance/FullBindingGraphValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/conformance/ModuleDocumentationValidationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/di/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/di/ProvisionInspector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/logging/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/logging/LoggingModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/rxjava/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/rxjava/RxJavaInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/rxjava/RxJavaModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/rxjava/RxJavaStartup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/trace/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/trace/TraceModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/trace/TraceRxJavaInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/fx/server/trace/TraceStartup.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/ReleaseInfos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/ChronoModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/TimeSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/testing/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/testing/FakeClock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/chrono/testing/TestingModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/processor/Annotations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/processor/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/processor/ProcessorModule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/AbstractPromise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/ExposedStatePromise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/FutureBasedPromise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/ImmediatePromise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/Promise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/PromiseExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/PromiseQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/PromiseRuntime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/hephaestus/promise/Promises.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/java/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/java/OneVersionTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/Calls.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/HttpClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/HttpProtoRpcChannel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/PostRequestBodyBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/http/Protos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/proto/AsyncService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/proto/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/proto/HttpService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/rpc/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/net/rpc/HttpController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/JsonModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/gson/Annotations.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/gson/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/gson/GsonModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/type/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/type/MoneyAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/proto/type/TimestampAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/testing/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/testing/io/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/testing/io/Paths.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/vcs/git/hooks/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/vcs/git/hooks/PreCommit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/yaml/YamlValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/dagger/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/dagger/ProducerExampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/fx/client/stub/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/fx/client/stub/GeneratedStubProcessorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/fx/client/stub/Hello.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/fx/stub/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/proto/type/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../javatests/com/elfin/proto/type/MoneyAdapterTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/http/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/http/http.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/http/http.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/http/main/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/http/main/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/http/mapper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/http/mapper_sample.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/http/mapper_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../net/http/rpc.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quantiacs/gettingstarted/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../quantiacs/gettingstarted/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repo/crate/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../repo/crate/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service/example/envoy.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service/example/main.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service/example/main/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service/example/main/server.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service/example/rust/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service/example/rust/coba1.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service/example/rust/coba2.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../service/example/rust/server.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/auto/ext/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/cc/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/cc/deps.bzl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/cpr/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/cpr/cpr.BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/cue/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/cue/deps.bzl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/curl/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/curl/curl.BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/go/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/go/deps.bzl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/grpc/rules.bzl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/gson/ext/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/gson/gson.BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/java/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/java/deps.bzl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/openssl/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/openssl/openssl.BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/com_google_protobuf_javalite.BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/com_google_protobuf_protobuf_java.BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/deps.bzl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/protobuf/jar/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/python/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/python/deps.bzl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/rust/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/rust/deps.bzl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/zlib/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../third_party/zlib/zlib.BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uix/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uix/client/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uix/client/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uix/example/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uix/example/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uix/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uix/server/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../uix/serving/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vcs/git/hooks/BUILD" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../vcs/git/hooks/pre-commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../repo/maven/jar/BUILD.bazel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.bazelignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.bazelignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.blaze/modules/.project-data-dir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.blaze/modules/.project-data-dir.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MODULE.bazel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../WORKSPACE" beforeDir="false" afterPath="$PROJECT_DIR$/../WORKSPACE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hermes/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../hermes/example/BUILD.bazel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hermes/example/hello_world_service.proto" beforeDir="false" afterPath="$PROJECT_DIR$/../hermes/example/hello_world_service.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hermes/example/main.cc" beforeDir="false" afterPath="$PROJECT_DIR$/../hermes/example/main.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repo/maven/deps.bzl" beforeDir="false" afterPath="$PROJECT_DIR$/../repo/maven/deps.bzl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uix/client/example/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../uix/client/example/main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -278,8 +106,8 @@
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Kotlin File" />
-        <option value="Class" />
         <option value="Kotlin Annotation" />
+        <option value="Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -290,7 +118,7 @@
       <entry key="RecognizedNullableAnnotations" value="true" />
     </appliedSettings>
   </component>
-  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.17/libexec" />
+  <component name="GOROOT" url="file:///usr/local/Cellar/go/1.17.5/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -304,6 +132,16 @@
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../hermes/example/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../repo/maven/deps.bzl" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../WORKSPACE" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../hermes/example/main.cc" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../hermes/example/hello_world_service.proto" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JupyterTrust" id="51da6a56-4d62-49d3-af7a-e5a9dc11d955" />
   <component name="MacroExpansionManager">
@@ -328,6 +166,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
@@ -393,7 +232,7 @@
       <recent name="$PROJECT_DIR$/../net/http/main" />
     </key>
   </component>
-  <component name="RunManager" selected="Bazel Command.Bazel run example:main">
+  <component name="RunManager" selected="Bazel Command.Bazel run example:Main">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -429,6 +268,14 @@
         <option name="Blaze.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Bazel run example:Main" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true" nameIsGenerated="true">
+      <blaze-settings handler-id="BlazeJavaRunConfigurationHandlerProvider" kind="kt_jvm_binary" blaze-command="run">
+        <blaze-target>//java/com/elfin/atlas/example:Main</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Bazel run example:main" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true" nameIsGenerated="true">
       <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" kind="kt_jvm_binary" blaze-command="run">
         <blaze-target>//java/com/elfin/fx/example:main</blaze-target>
@@ -440,15 +287,6 @@
     <configuration name="Bazel run uix:main_binary" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command">
       <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="run">
         <blaze-target>//uix:main_binary</blaze-target>
-      </blaze-settings>
-      <method v="2">
-        <option name="Blaze.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Bazel test MoneyAdapterTest" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true">
-      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="test" kind="kt_jvm_library" context-element="$PROJECT_DIR$/../javatests/com/elfin/proto/type/MoneyAdapterTest.kt#MoneyAdapterTest">
-        <blaze-target>//javatests/com/elfin/proto/type:MoneyAdapterTest</blaze-target>
-        <blaze-user-flag>--test_filter=com.elfin.proto.type.MoneyAdapterTest</blaze-user-flag>
       </blaze-settings>
       <method v="2">
         <option name="Blaze.BeforeRunTask" enabled="true" />
@@ -486,19 +324,19 @@
       <item itemvalue="Bazel Command.Bazel run :gazelle" />
       <item itemvalue="Bazel Command.Bazel run :Main" />
       <item itemvalue="Bazel Command.Bazel run uix:main_binary" />
-      <item itemvalue="Bazel Command.Bazel test MoneyAdapterTest" />
       <item itemvalue="Bazel Command.Bazel test ProducerExampleTest" />
       <item itemvalue="Bazel Command.Bazel test dagger:ProducerExampleTest" />
       <item itemvalue="Bazel Command.Bazel test ProducerExampleTest.getName" />
       <item itemvalue="Bazel Command.Bazel run example:main" />
+      <item itemvalue="Bazel Command.Bazel run example:Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Bazel Command.Bazel run example:Main" />
         <item itemvalue="Bazel Command.Bazel run example:main" />
         <item itemvalue="Bazel Command.Bazel test ProducerExampleTest" />
         <item itemvalue="Bazel Command.Bazel test ProducerExampleTest.getName" />
         <item itemvalue="Bazel Command.Bazel test dagger:ProducerExampleTest" />
-        <item itemvalue="Bazel Command.Bazel test ProducerExampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -657,6 +495,8 @@
       <workItem from="1623007005987" duration="8494000" />
       <workItem from="1630940830330" duration="723000" />
       <workItem from="1632360403495" duration="1891000" />
+      <workItem from="1641437943560" duration="11863000" />
+      <workItem from="1641473532785" duration="2547000" />
     </task>
     <servers />
   </component>

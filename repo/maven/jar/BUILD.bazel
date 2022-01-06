@@ -1,0 +1,7 @@
+java_library(
+    name = "jar",
+    exports = [
+        "//:jar",
+    ],
+    visibility = ["//visibility:public"],
+)

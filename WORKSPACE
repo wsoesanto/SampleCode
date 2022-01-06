@@ -189,6 +189,9 @@ git_repository(
     remote = "https://github.com/grpc/grpc-kotlin",
 )
 
+load("@com_github_grpc_grpc_kotlin//:repositories.bzl", "grpc_kt_repositories")
+grpc_kt_repositories()
+
 git_repository(
     name = "io_bazel_rules_closure",
     branch = "master",
@@ -281,3 +284,36 @@ http_archive(
     strip_prefix = "glog-0.5.0",
     urls = ["https://github.com/google/glog/archive/v0.5.0.zip"],
 )
+
+git_repository(
+    name = "io_grpc_grpc_java",
+    branch = "master",
+    remote = "https://github.com/grpc/grpc-java",
+)
+
+# load("@io_grpc_grpc_java//:repositories.bzl", "grpc_java_repositories")
+
+git_repository(
+    name = "rules_android",
+    tag = "v0.1.1",
+    remote = "https://github.com/bazelbuild/rules_android",
+)
+
+git_repository(
+    name = "io_bazel_rules_kotlin_master",
+    branch = "master",
+    remote = "https://github.com/bazelbuild/rules_kotlin",
+)
+
+load("@io_bazel_rules_kotlin_master//src/main/starlark/release_archive:repository.bzl", "archive_repository")
+
+archive_repository(
+    name = "io_bazel_rules_kotlin",
+    source_repository_name = "io_bazel_rules_kotlin_master"
+)
+
+load("@io_bazel_rules_kotlin//kotlin:repositories.bzl", "kotlin_repositories")
+kotlin_repositories()
+
+load("@io_bazel_rules_kotlin//kotlin:core.bzl", "kt_register_toolchains")
+kt_register_toolchains()
