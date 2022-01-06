@@ -113,6 +113,12 @@ load("@rules_proto//proto:repositories.bzl", "rules_proto_toolchains")
 
 rules_proto_toolchains()
 
+git_repository(
+    name = "com_github_grpc_grpc_web",
+    remote = "https://github.com/grpc/grpc-web",
+    tag = "1.2.1",
+)
+
 load("@build_bazel_rules_nodejs//packages/labs:package.bzl", "npm_bazel_labs_dependencies")
 
 npm_bazel_labs_dependencies()
@@ -176,13 +182,7 @@ git_repository(
     branch = "main",
     remote = "https://github.com/google/re2",
 )
-
-git_repository(
-    name = "com_github_grpc_grpc_web",
-    remote = "https://github.com/grpc/grpc-web",
-    tag = "1.2.1",
-)
-
+ 
 git_repository(
     name = "com_github_grpc_grpc_kotlin",
     branch = "master",

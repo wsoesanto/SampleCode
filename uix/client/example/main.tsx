@@ -10,14 +10,20 @@ async function main() {
     let req = new SayHelloRequest();
     
     try {
-        await client.sayHello(req);
-        console.log('gila ya');
+        let res =  await client.sayHello(req);
     } catch (e: any) {
-        console.log('nyebelin');
-        console.log(e);
+        console.log(e.message);
     }
 }
 
 if (require.main === module) {
-    main();
+
+    performance.mark('a');
+    Promise.all([...Array(1000).keys()].map(x => {
+        return main();
+    })).then(value => {
+        performance.mark('b');
+        let measurement = performance.measure('measure', 'a', 'b');
+        console.log(measurement);
+    });
 }

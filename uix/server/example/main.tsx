@@ -1,6 +1,7 @@
 import express from 'express';
 import {ServingContext} from 'SampleCode/uix/server/example/serving_context_pb';
 import {renderToString} from 'react-dom/server';
+import {runfiles} from '@bazel/runfiles';
 
 function main() {
     const app = express()
@@ -14,7 +15,7 @@ function main() {
     });
 
     app.get('/client.js', (req, res) => {
-        res.sendFile('./uix/client/example/')
+        res.sendFile(process.cwd() + '/uix/client/example/app.bundle.js/main.js');
     });
 
     const port = 80;

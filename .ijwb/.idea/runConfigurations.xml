@@ -3,6 +3,7 @@
   <component name="RunConfigurationProducerService">
     <option name="ignoredProducers">
       <set>
+        <option value="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer" />
         <option value="com.android.tools.idea.run.AndroidConfigurationProducer" />
         <option value="com.android.tools.idea.testartifacts.instrumented.AndroidTestConfigurationProducer" />
         <option value="com.android.tools.idea.testartifacts.junit.TestClassAndroidConfigurationProducer" />

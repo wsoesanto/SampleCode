@@ -1,7 +1,17 @@
 load("@npm//@bazel/typescript:index.bzl", "ts_project")
 load("@npm//webpack-cli:index.bzl", webpack = "webpack_cli")
 load("@build_bazel_rules_nodejs//:index.bzl", "nodejs_binary")
+load("@npm//@bazel/rollup:index.bzl", "rollup_bundle")
 
+rollup_bundle(
+    name = "bundle_rollup",
+    deps = [
+        ":main",
+    ],
+    entry_point = ":main",
+    format = "iife",
+    visibility = ["//visibility:public"]
+)
 
 ts_project(
     name = "main",
@@ -45,9 +55,11 @@ webpack(
     link_workspace_root = True,
     data = [
         ":main",
+        "//hermes/example:hello_world_service_ts_proto",
         ":webpack",
         "@npm//:node_modules",
     ],
+    visibility = ["//visibility:public"]
 )
 ts_project(
     name = "webpack",

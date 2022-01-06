@@ -1,9 +1,10 @@
 import path from 'path';
 import * as webpack from 'webpack';
 import {runfiles} from '@bazel/runfiles';
+import * as fs from 'fs/promises';
 
-let ans = path.resolve(process.cwd(), 'bazel-bin');
-console.log(runfiles.resolveWorkspaceRelative('hermes/example/hello_world_service_pb.js'));
+
+let ans = path.resolve(process.cwd(), 'bazel-out/darwin-fastbuild/bin');
 
 const config: webpack.Configuration = {
   mode: 'development',
@@ -15,7 +16,7 @@ const config: webpack.Configuration = {
   }
 };
 
-console.log('gilayalu');
+// console.log('gilayalu');
 console.log(ans);
 
 export default config
