@@ -20,7 +20,14 @@ kt_jvm_binary(
         "@maven//:io_opentelemetry_instrumentation_opentelemetry_grpc_1_6",
         "@maven//:org_jetbrains_kotlin_kotlin_stdlib_jdk8",
     ],
+    data = [
+        "log4j.properties"
+    ],
+    args = [
+        "-Dlog4j.configuration=java/com/elfin/atlas/example/log4j.properties"
+    ],
     runtime_deps = [
+        "@maven//:org_slf4j_slf4j_log4j12",
         "@flogger//api:system_backend",
         "@maven//:io_grpc_grpc_netty",
     ]
