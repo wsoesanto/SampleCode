@@ -16,6 +16,7 @@
     <library>libproto-hjar_64cd770c</library>
     <library>libheaders_proto-speed-hjar_14af7b41</library>
     <library>libservice_proto-speed-hjar_56435b71</library>
+    <library>coroutine_module_baab1084</library>
     <library>libapi-hjar_76465ba0</library>
     <library>libcomponents-hjar_879ecf20</library>
     <library>Main_5e0d7a99</library>
@@ -25,6 +26,8 @@
     <library>libapi-hjar_e5be47f2</library>
     <library>libdependency-gen_ad566386</library>
     <library>service_kt_grpc-kt-java_56435b71</library>
+    <library>libcore-hjar_f1a87b7</library>
+    <library>trace_module_baab1084</library>
     <library>libcore-hjar_fb5cd0ab</library>
     <library>libapi-hjar_6c709841</library>
     <library>libmoney_proto-speed-hjar_48f08f56</library>
@@ -37,6 +40,8 @@
     <library>libstub-hjar_d212f5d6</library>
     <library>libcore-hjar_40ceba93</library>
     <library>main-gen_c388bcc8</library>
+    <library>Main_5d609adf</library>
+    <library>components_c9b58981</library>
     <library>libmodel-hjar_ebf700ad</library>
     <library>libstub-hjar_21aaaf67</library>
     <library>stub-kt-java_771d0e57</library>
@@ -45,6 +50,8 @@
     <library>libhello_world_service_java_grpc-hjar_3e6ccb80</library>
     <library>Client-gen_ea0a78c9</library>
     <library>libannotations-hjar_486618d8</library>
+    <library>libapi-hjar_eb7f4efc</library>
+    <library>context-kt-java_771d0e57</library>
     <library>libjgit-hjar_ef01287b</library>
     <library>hello_world_service_kt_jvm_grpc-kt-java_3e6ccb80</library>
     <library>libservice_java_grpc-hjar_60e1439</library>
@@ -70,12 +77,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="047189c9-478d-4836-a989-4c66c36eea13" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/CoroutineModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/NetworkModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/Rpc.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/TraceModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/components/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/components/RequestComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/components/SingletonComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/SimpleComponent.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/SimpleModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/trace/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/trace/Spans.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/mta/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/mta/example/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/mta/example/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/mta/gtfs-realtime.proto" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.bazelignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.bazelignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BUILD" beforeDir="false" afterPath="$PROJECT_DIR$/../BUILD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../WORKSPACE" beforeDir="false" afterPath="$PROJECT_DIR$/../WORKSPACE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hermes/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../hermes/example/BUILD.bazel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../hermes/example/client.cc" beforeDir="false" afterPath="$PROJECT_DIR$/../hermes/example/client.cc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repo/maven/deps.bzl" beforeDir="false" afterPath="$PROJECT_DIR$/../repo/maven/deps.bzl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uix/client/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../uix/client/example/BUILD.bazel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uix/client/example/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../uix/client/example/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uix/server/example/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../uix/server/example/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,8 +125,8 @@
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Kotlin File" />
-        <option value="Kotlin Annotation" />
         <option value="Class" />
+        <option value="Kotlin Annotation" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -126,6 +157,7 @@
     <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../hermes/example/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/TraceModule.kt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../repo/maven/deps.bzl" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../WORKSPACE" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../hermes/example/main.cc" root0="FORCE_HIGHLIGHTING" />
@@ -179,21 +211,31 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/../node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../third_party/protobuf" />
+      <recent name="$PROJECT_DIR$/../third_party/cc" />
+      <recent name="$PROJECT_DIR$/../third_party/cue" />
+      <recent name="$PROJECT_DIR$/../third_party/rust" />
+      <recent name="$PROJECT_DIR$/../third_party/python" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../java/com/elfin/mta" />
+      <recent name="$PROJECT_DIR$/../java/com/elfin/mta/example" />
+      <recent name="$PROJECT_DIR$/../fx/server" />
+      <recent name="$PROJECT_DIR$/../third_party/protobuf" />
+      <recent name="$PROJECT_DIR$/.." />
+    </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="com.elfin.fx.server" />
       <recent name="com.elfin.fx.server.service" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.elfin.proto.type" />
-      <recent name="com.elfin.fx.client.stub" />
     </key>
     <key name="MoveInnerDialog.RECENTS_KEY">
       <recent name="com.elfin.proto.type" />
       <recent name="com.elfin.fx.client" />
       <recent name="com.elfin.devtools.java.flag" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="java.com.elfin.fx.client.stub" />
@@ -202,25 +244,15 @@
       <recent name="com.elfin.devtools.java.junit" />
       <recent name="com.elfin.devtools.java.flag" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../third_party/protobuf" />
-      <recent name="$PROJECT_DIR$/../third_party/cc" />
-      <recent name="$PROJECT_DIR$/../third_party/cue" />
-      <recent name="$PROJECT_DIR$/../third_party/rust" />
-      <recent name="$PROJECT_DIR$/../third_party/python" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.elfin.proto.type" />
+      <recent name="com.elfin.fx.client.stub" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.elfin.service.example" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/../fx/server" />
-      <recent name="$PROJECT_DIR$/../third_party/protobuf" />
-      <recent name="$PROJECT_DIR$/.." />
-      <recent name="$PROJECT_DIR$/../service/example/main" />
-      <recent name="$PROJECT_DIR$/../net/http/main" />
-    </key>
   </component>
-  <component name="RunManager" selected="Bazel Command.Bazel run example:Main">
+  <component name="RunManager" selected="Bazel Command.Bazel run example:Main (1)">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -251,6 +283,14 @@
     <configuration name="Bazel run :gazelle" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command">
       <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" blaze-command="run">
         <blaze-target>//:gazelle</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Bazel run example:Main (1)" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true" nameIsGenerated="true">
+      <blaze-settings handler-id="BlazeJavaRunConfigurationHandlerProvider" kind="kt_jvm_binary" blaze-command="run">
+        <blaze-target>//java/com/elfin/mta/example:Main</blaze-target>
       </blaze-settings>
       <method v="2">
         <option name="Blaze.BeforeRunTask" enabled="true" />
@@ -299,32 +339,24 @@
         <option name="Blaze.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Bazel test dagger:ProducerExampleTest" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true" nameIsGenerated="true">
-      <blaze-settings handler-id="BlazeCommandGenericRunConfigurationHandlerProvider" kind="java_test" blaze-command="test">
-        <blaze-target>//javatests/com/elfin/dagger:ProducerExampleTest</blaze-target>
-      </blaze-settings>
-      <method v="2">
-        <option name="Blaze.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Bazel Command.Bazel run :buildifier" />
       <item itemvalue="Bazel Command.Bazel run :gazelle" />
       <item itemvalue="Bazel Command.Bazel run :Main" />
       <item itemvalue="Bazel Command.Bazel run uix:main_binary" />
       <item itemvalue="Bazel Command.Bazel test ProducerExampleTest" />
-      <item itemvalue="Bazel Command.Bazel test dagger:ProducerExampleTest" />
       <item itemvalue="Bazel Command.Bazel test ProducerExampleTest.getName" />
       <item itemvalue="Bazel Command.Bazel run example:main" />
       <item itemvalue="Bazel Command.Bazel run example:Main" />
+      <item itemvalue="Bazel Command.Bazel run example:Main (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Bazel Command.Bazel run example:Main (1)" />
         <item itemvalue="Bazel Command.Bazel run example:Main" />
         <item itemvalue="Bazel Command.Bazel run example:main" />
         <item itemvalue="Bazel Command.Bazel test ProducerExampleTest" />
         <item itemvalue="Bazel Command.Bazel test ProducerExampleTest.getName" />
-        <item itemvalue="Bazel Command.Bazel test dagger:ProducerExampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -484,19 +516,13 @@
       <workItem from="1630940830330" duration="723000" />
       <workItem from="1632360403495" duration="1891000" />
       <workItem from="1641437943560" duration="11863000" />
-      <workItem from="1641473532785" duration="4482000" />
+      <workItem from="1641473532785" duration="49477000" />
+      <workItem from="1641700349613" duration="7044000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/../third_party/rules_nodejs/packages/terser/test/sourcemap/src1.js.map" />
-        <option value="$PROJECT_DIR$/../third_party/rules_nodejs/packages/terser/test/sourcemap/src1.js" />
-        <option value="$PROJECT_DIR$/../third_party/rules_nodejs/packages/terser/test/inline_sourcemap/input.js" />
-      </list>
-    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -517,203 +543,21 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/.blaze/libraries/auto-value-1.7_2bc945f9.jar!/com/google/auto/value/extension/AutoValueExtension.class</url>
-          <line>87</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/.blaze/libraries/libapi-src_7d511382-src.jar!/io/grpc/Metadata.java</url>
-          <line>741</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/.blaze/libraries/libapi-src_7d511382-src.jar!/io/grpc/Metadata.java</url>
-          <line>744</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$PROJECT_DIR$/.blaze/libraries/libapi-src_7d511382-src.jar!/io/grpc/Metadata.java</url>
-          <line>742</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/server/service/example/ExampleServiceClientModule.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../java/com/elfin/devtools/java/flag/Flags.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../java/com/elfin/repo/crates/Dependencies.java</url>
-          <line>96</line>
-          <option name="timeStamp" value="34" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../java/com/elfin/repo/crates/Dependencies.java</url>
-          <line>98</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../java/com/elfin/fx/client/stub/GeneratedStubProcessor.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>190</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>191</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>193</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>214</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>200</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>208</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>210</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>204</line>
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>202</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>201</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/internal/bind/ReflectiveTypeAdapterFactory.class</url>
-          <line>184</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/execroot/SampleCode/bazel-out/darwin-fastbuild/bin/external/com_google_gson/libproto_type_adapter-src.jar!/com/google/gson/protobuf/ProtoTypeAdapter.java</url>
-          <line>307</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/execroot/SampleCode/bazel-out/darwin-fastbuild/bin/external/com_google_gson/libproto_type_adapter-src.jar!/com/google/gson/protobuf/ProtoTypeAdapter.java</url>
-          <line>303</line>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/execroot/SampleCode/bazel-out/darwin-fastbuild/bin/external/com_google_gson/libproto_type_adapter-src.jar!/com/google/gson/protobuf/ProtoTypeAdapter.java</url>
-          <line>302</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/execroot/SampleCode/bazel-out/darwin-fastbuild/bin/external/com_google_gson/libproto_type_adapter-src.jar!/com/google/gson/protobuf/ProtoTypeAdapter.java</url>
-          <line>306</line>
-          <option name="timeStamp" value="86" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>537</line>
-          <option name="timeStamp" value="87" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>538</line>
-          <option name="timeStamp" value="88" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>539</line>
-          <option name="timeStamp" value="89" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>541</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>543</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>547</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>549</line>
-          <option name="timeStamp" value="93" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>551</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>554</line>
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>556</line>
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar:///private/var/tmp/_bazel_willys/555d03a7428f47f6d773b62f6cb6ad7d/external/maven/v1/https/repo1.maven.org/maven2/com/google/code/gson/gson/2.8.5/gson-2.8.5.jar!/com/google/gson/Gson.class</url>
-          <line>559</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="DlvErrorBreakpoint" />
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+        <breakpoint type="dart-exception" />
+      </default-breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="BlazeCommandRunConfigurationType">
         <watch expression="context.get(Job.Key).job.children" language="kotlin" custom="import kotlinx.coroutines.Job,import kotlinx.coroutines.job" />
         <watch expression="continuation.javaClass" language="kotlin" />
+        <watch expression="Thread.currentThread().name" language="kotlin" />
       </configuration>
     </watches-manager>
   </component>

@@ -1,0 +1,24 @@
+load("@com_github_grpc_grpc_kotlin//:kt_jvm_grpc.bzl", "kt_jvm_proto_library")
+
+proto_library(
+    name = "gtfs_realtime_proto",
+    srcs = ["gtfs-realtime.proto"],
+)
+
+java_proto_library(
+    name = "gtfs_realtime_java_proto",
+    deps = [
+        ":gtfs_realtime_proto"
+    ],
+    visibility = [
+        "//visibility:public",
+    ]
+)
+
+kt_jvm_proto_library(
+    name = "gtfs_realtime_kt_jvm_proto",
+    deps = [":gtfs_realtime_proto"],
+    visibility = [
+        "//visibility:public",
+    ]
+)

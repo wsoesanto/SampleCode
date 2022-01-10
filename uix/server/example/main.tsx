@@ -9,7 +9,10 @@ function main() {
     app.get('/', (req, res) => {
         res.send(renderToString(<html>
             <head></head>
-            <body>Hello World Gila!</body>
+            <body>
+                <div>Hello World Gila!</div>
+                <div id='react-dom'/>
+            </body>
             <script type='application/javascript' src='client.js'/>
         </html>));
     });

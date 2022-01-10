@@ -221,10 +221,6 @@ git_repository(
     remote = "https://github.com/bazelbuild/rules_rust",
 )
 
-load("//repo/maven:deps.bzl", "maven_deps_install")
-
-maven_deps_install()
-
 http_archive(
     name = "zlib",
     build_file = "@com_google_protobuf//: /zlib.BUILD",
@@ -290,7 +286,15 @@ http_archive(
     urls = ["https://github.com/google/glog/archive/v0.5.0.zip"],
 )
 
-# load("@io_grpc_grpc_java//:repositories.bzl", "grpc_java_repositories")
+git_repository(
+    name = "dagger",
+    branch = "master",
+    remote = "https://github.com/google/dagger",
+)
+
+load("//repo/maven:deps.bzl", "maven_deps_install")
+
+maven_deps_install()
 
 git_repository(
     name = "rules_android",
@@ -316,3 +320,50 @@ kotlin_repositories()
 
 load("@io_bazel_rules_kotlin//kotlin:core.bzl", "kt_register_toolchains")
 kt_register_toolchains()
+
+git_repository(
+    name = "flogger",
+    tag = "flogger-0.7",
+    remote = "https://github.com/google/flogger",
+)
+
+# If this needs updating the hash value in the "strip_prefix" and "urls" lines
+# should be the hash of the latest Github commit for bazel-common. The "sha256"
+# value should be the SHA-256 of the downloaded zip file, but if you just try
+# and commit with the old value then Travis should report the expected value
+# in the most recent failure in
+# https://travis-ci.org/github/google/flogger/builds
+http_archive(
+    name = "google_bazel_common",
+    sha256 = "d8aa0ef609248c2a494d5dbdd4c89ef2a527a97c5a87687e5a218eb0b77ff640",
+    strip_prefix = "bazel-common-4a8d451e57fb7e1efecbf9495587a10684a19eb2",
+    urls = ["https://github.com/google/bazel-common/archive/4a8d451e57fb7e1efecbf9495587a10684a19eb2.zip"],
+)
+
+load("@google_bazel_common//:workspace_defs.bzl", "google_common_workspace_rules")
+
+google_common_workspace_rules()
+
+http_archive(
+    name = "openjdk8",
+    build_file_content = """
+java_runtime(name = 'runtime', srcs =  glob(['**']), visibility = ['//visibility:public'])
+exports_files(["WORKSPACE"], visibility = ["//visibility:public"])
+""",
+    strip_prefix = "zulu8.38.0.13-ca-jdk8.0.212-macosx_x64",
+    urls = ["https://mirror.bazel.build/openjdk/azul-zulu8.38.0.13-ca-jdk8.0.212/zulu8.38.0.13-ca-jdk8.0.212-macosx_x64.tar.gz"],
+)
+
+http_archive(
+    name = "openjdk11",
+    build_file_content = """
+java_runtime(name = 'runtime', srcs =  glob(['**']), visibility = ['//visibility:public'])
+exports_files(["WORKSPACE"], visibility = ["//visibility:public"])
+""",
+    strip_prefix = "zulu11.31.11-ca-jdk11.0.3-macosx_x64",
+    urls = ["https://mirror.bazel.build/openjdk/azul-zulu11.31.11-ca-jdk11.0.3/zulu11.31.11-ca-jdk11.0.3-macosx_x64.tar.gz"],
+)
+
+load("@io_grpc_grpc_java//:repositories.bzl", "grpc_java_repositories")
+
+grpc_java_repositories()

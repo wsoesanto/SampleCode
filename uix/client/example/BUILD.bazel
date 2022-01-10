@@ -23,12 +23,19 @@ ts_project(
     ],
     link_workspace_root = True,
     deps = [
+        "@npm//@opentelemetry/sdk-trace-base",
+        "@npm//@opentelemetry/sdk-trace-web",
+        "@npm//@opentelemetry/api",
+        "@npm//@opentelemetry/context-zone",
         "@npm//@types/react",
         "@npm//@types/react-dom",
         "@npm//@types/express",
         "@npm//grpc-web",
         "@npm//@types/google-protobuf",
+        "@npm//@types/node",
         "//hermes/example:hello_world_service_ts_proto",
+        "@npm//@opentelemetry/instrumentation-grpc",
+        "@npm//@opentelemetry/instrumentation",
     ],
     tsconfig = "//:tsconfig"
 )

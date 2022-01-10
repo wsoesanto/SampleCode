@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
     hermes::example::SayHelloRequest request;
     hermes::example::SayHelloResponse response;
     grpc::Status code = service.SayHello(&context, request, &response);
-    LOG(INFO) << response.DebugString();
+    LOG(INFO) << code.error_code() << " " << response.DebugString() << " " << code.error_message();
 
     // ServiceImpl service_impl;
     // server_builder.RegisterService(&service_impl);

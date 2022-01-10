@@ -1,4 +1,4 @@
-load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary")
+load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary", "kt_jvm_library")
 
 kt_jvm_binary(
     name = "Main",
@@ -10,10 +10,35 @@ kt_jvm_binary(
         "//hermes/example:hello_world_service_kt_jvm_grpc",
         "//hermes/example:hello_world_service_kt_jvm_proto",
         "@io_grpc_grpc_java//api",
-        "@io_grpc_grpc_java//protobuf",
-        "@io_grpc_grpc_java//stub",
+        "@flogger//api",
+        "//:dagger",
+        ":simple_component",
+        "//java/com/elfin/atlas/components:components",
+        "//java/com/elfin/atlas/trace",
+        "@maven//:io_opentelemetry_opentelemetry_sdk_trace",
+        "@maven//:io_opentelemetry_opentelemetry_extension_kotlin",
+        "@maven//:io_opentelemetry_instrumentation_opentelemetry_grpc_1_6",
+        "@maven//:org_jetbrains_kotlin_kotlin_stdlib_jdk8",
     ],
     runtime_deps = [
+        "@flogger//api:system_backend",
         "@maven//:io_grpc_grpc_netty",
     ]
+)
+
+kt_jvm_library(
+    name = "simple_component",
+    srcs = ["SimpleComponent.kt"],
+    deps = [
+        ":simple_module",
+        "//:dagger",
+    ],
+)
+
+kt_jvm_library(
+    name = "simple_module",
+    srcs = ["SimpleModule.kt"],
+    deps = [
+        "//:dagger",
+    ],
 )

@@ -1,4 +1,5 @@
 load("@rules_jvm_external//:defs.bzl", "maven_install")
+load("@dagger//:workspace_defs.bzl", "DAGGER_ARTIFACTS", "DAGGER_REPOSITORIES")
 
 _MAVEN_DEPS = [
     # keep sorted
@@ -18,8 +19,8 @@ _MAVEN_DEPS = [
     "com.google.auto.factory:auto-factory:1.0-beta8",
     "com.google.auto.service:auto-service:1.0-rc5",
     "com.google.auto.service:auto-service-annotations:1.0-rc5",
-    "com.google.auto.value:auto-value:1.5.4",
-    "com.google.auto.value:auto-value-annotations:1.6.5",
+    "com.google.auto.value:auto-value:1.6",
+    "com.google.auto.value:auto-value-annotations:1.6",
     "com.google.code.findbugs:jsr305:3.0.2",
     "com.google.code.gson:gson:2.8.5",
     "com.google.common.html.types:types:1.0.8",
@@ -29,6 +30,18 @@ _MAVEN_DEPS = [
     "com.google.errorprone:error_prone_core:2.10.0",
     "com.google.errorprone:javac:9+181-r4173-1",
     "com.google.errorprone:javac-shaded:9+181-r4173-1",
+    "io.opentelemetry:opentelemetry-sdk:1.9.1",
+    "io.opentelemetry:opentelemetry-bom:1.9.1",
+    "io.opentelemetry:opentelemetry-api:1.9.1",
+    "io.opentelemetry:opentelemetry-api-common:0.13.1",
+    "io.opentelemetry:opentelemetry-extension-kotlin:1.9.1",
+    "io.opentelemetry:opentelemetry-sdk-trace:1.9.1",
+    "io.opentelemetry:opentelemetry-exporters-otlp:0.9.1",
+    "io.opentelemetry:opentelemetry-exporters-logging:0.9.1",
+    "io.opentelemetry.instrumentation:opentelemetry-grpc-1.6:1.9.0-alpha",
+    "io.opentelemetry:opentelemetry-context:1.10.0",
+    "com.squareup.okhttp3:okhttp:4.10.0-RC1",
+    "io.opentelemetry.javaagent.instrumentation:opentelemetry-javaagent-grpc-1.5:0.14.0",
     "com.google.flogger:flogger-log4j-backend:0.4",
     "com.google.googlejavaformat:google-java-format:1.7",
     "com.google.guava:failureaccess:1.0.1",
@@ -56,6 +69,7 @@ _MAVEN_DEPS = [
     "com.squareup:kotlinpoet:1.6.0",
     "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.5",
     "org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.3.5",
+    "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.10",
     "com.squareup.okhttp3:okhttp:4.4.1",
     "com.vladsch.flexmark:flexmark:0.34.18",
     "com.vladsch.flexmark:flexmark-ext-abbreviation:0.34.18",
@@ -196,7 +210,7 @@ _MAVEN_DEPS = [
     "org.tukaani:xz:1.8",
     "com.google.j2objc:j2objc-annotations:1.3",
     "com.google.protobuf:protobuf-kotlin:3.17.0-rc-2",
-]
+] + DAGGER_ARTIFACTS
 
 def _get_bazel_maven_target_name(name):
     return name.rpartition(":")[0].replace("-", "_").replace(".", "_").replace(":", "_")
@@ -216,7 +230,7 @@ def maven_deps_install():
             "https://maven.google.com",
             "https://mvnrepository.com",
             "https://repo1.maven.org/maven2",
-        ],
+        ] + DAGGER_REPOSITORIES,
     )
 
     for dep in _MAVEN_DEPS:
