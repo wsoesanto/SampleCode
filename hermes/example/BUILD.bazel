@@ -10,13 +10,13 @@ cc_binary(
         "main.cc",
     ],
     deps = [
-        ":hello_world_service_cc_proto",
         ":hello_world_service_cc_grpc",
+        ":hello_world_service_cc_proto",
+        "@com_github_gflags_gflags//:gflags",
+        "@com_github_google_glog//:glog",
         "@com_github_grpc_grpc//:grpc++",
         "@com_github_grpc_grpc//:grpc++_reflection",
-        "@com_github_google_glog//:glog",
-        "@com_github_gflags_gflags//:gflags",
-    ]
+    ],
 )
 
 cc_binary(
@@ -25,27 +25,27 @@ cc_binary(
         "client.cc",
     ],
     deps = [
-        ":hello_world_service_cc_proto",
         ":hello_world_service_cc_grpc",
+        ":hello_world_service_cc_proto",
+        "@com_github_gflags_gflags//:gflags",
+        "@com_github_google_glog//:glog",
         "@com_github_grpc_grpc//:grpc++",
         "@com_github_grpc_grpc//:grpc++_reflection",
-        "@com_github_google_glog//:glog",
-        "@com_github_gflags_gflags//:gflags",
-    ]
+    ],
 )
 
 proto_library(
     name = "hello_world_service_proto",
     srcs = [
-        "hello_world_service.proto"
-    ]
+        "hello_world_service.proto",
+    ],
 )
 
 cc_proto_library(
     name = "hello_world_service_cc_proto",
     deps = [
-        ":hello_world_service_proto"
-    ]
+        ":hello_world_service_proto",
+    ],
 )
 
 cc_grpc_library(
@@ -60,44 +60,45 @@ ts_proto_library(
     proto = ":hello_world_service_proto",
     visibility = [
         "//visibility:public",
-    ]
+    ],
 )
 
 java_proto_library(
     name = "hello_world_service_java_proto",
+    visibility = [
+        "//visibility:public",
+    ],
     deps = [
         ":hello_world_service_proto",
     ],
-    visibility = [
-        "//visibility:public",
-    ]
 )
 
 java_grpc_library(
     name = "hello_world_service_java_grpc",
     srcs = [
         ":hello_world_service_proto",
-    ], deps = [
-        ":hello_world_service_java_proto",
     ],
     visibility = [
         "//visibility:public",
-    ]
+    ],
+    deps = [
+        ":hello_world_service_java_proto",
+    ],
 )
 
 kt_jvm_proto_library(
     name = "hello_world_service_kt_jvm_proto",
-    deps = [":hello_world_service_proto"],
     visibility = [
         "//visibility:public",
-    ]
+    ],
+    deps = [":hello_world_service_proto"],
 )
 
 kt_jvm_grpc_library(
     name = "hello_world_service_kt_jvm_grpc",
     srcs = [":hello_world_service_proto"],
-    deps = [":hello_world_service_kt_jvm_proto"],
     visibility = [
         "//visibility:public",
-    ]
+    ],
+    deps = [":hello_world_service_kt_jvm_proto"],
 )

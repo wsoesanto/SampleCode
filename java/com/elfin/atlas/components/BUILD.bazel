@@ -3,8 +3,11 @@ load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary", "kt_jvm_library"
 kt_jvm_library(
     name = "components",
     srcs = [
+        "RequestComponent.kt",
         "SingletonComponent.kt",
-        "RequestComponent.kt"
+    ],
+    visibility = [
+        "//visibility:public",
     ],
     deps = [
         "//:dagger",
@@ -12,7 +15,4 @@ kt_jvm_library(
         "//java/com/elfin/atlas:network_module",
         "//java/com/elfin/atlas:trace_module",
     ],
-    visibility =[
-        "//visibility:public",
-    ]
 )

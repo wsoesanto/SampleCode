@@ -4,7 +4,7 @@ proto_library(
     name = "serving_context_proto",
     srcs = [
         "serving_context.proto",
-    ]
+    ],
 )
 
 ts_proto_library(
@@ -12,5 +12,5 @@ ts_proto_library(
     proto = ":serving_context_proto",
     visibility = [
         "//visibility:public",
-    ]
+    ],
 )

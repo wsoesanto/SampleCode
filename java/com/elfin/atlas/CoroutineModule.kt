@@ -15,32 +15,29 @@ import javax.inject.Singleton
 import io.opentelemetry.extension.kotlin.asContextElement
 
 @Module
-class CoroutineModule private constructor() {
+object CoroutineModule {
 
-  companion object {
+  @JvmStatic
+  @Provides
+  @Singleton
+  @Internal
+  fun provideExecutor(): Executor = Executors.newFixedThreadPool(4,
+                                                                 ThreadFactoryBuilder().setNameFormat(
+                                                                   "coroutine-thread-%d").build())
 
-    @JvmStatic
-    @Provides
-    @Singleton
-    @Internal
-    fun provideExecutor(): Executor = Executors.newFixedThreadPool(4,
-                                                                   ThreadFactoryBuilder().setNameFormat(
-                                                                     "coroutine-thread-%d").build())
+  @JvmStatic
+  @Provides
+  @Singleton
+  @Internal
+  fun provideCoroutineDispatcher(
+    @Internal executor: Executor): CoroutineDispatcher = executor.asCoroutineDispatcher()
 
-    @JvmStatic
-    @Provides
-    @Singleton
-    @Internal
-    fun provideCoroutineDispatcher(
-      @Internal executor: Executor): CoroutineDispatcher = executor.asCoroutineDispatcher()
+  @JvmStatic
+  @Provides
+  fun provideCoroutineScope(
+    @Internal coroutineDispatcher: CoroutineDispatcher): CoroutineScope = CoroutineScope(
+    GrpcContextElement.current() + coroutineDispatcher + SupervisorJob())
 
-    @JvmStatic
-    @Provides
-    fun provideCoroutineScope(
-      @Internal coroutineDispatcher: CoroutineDispatcher): CoroutineScope = CoroutineScope(
-      GrpcContextElement.current() + coroutineDispatcher + SupervisorJob())
-
-    @Qualifier
-    annotation class Internal
-  }
+  @Qualifier
+  annotation class Internal
 }

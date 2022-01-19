@@ -5,12 +5,12 @@ load("@npm//@bazel/rollup:index.bzl", "rollup_bundle")
 
 rollup_bundle(
     name = "bundle_rollup",
+    entry_point = ":main",
+    format = "iife",
+    visibility = ["//visibility:public"],
     deps = [
         ":main",
     ],
-    entry_point = ":main",
-    format = "iife",
-    visibility = ["//visibility:public"]
 )
 
 ts_project(
@@ -18,35 +18,35 @@ ts_project(
     srcs = [
         "main.tsx",
     ],
+    link_workspace_root = True,
+    tsconfig = "//:tsconfig",
     visibility = [
         "//visibility:public",
     ],
-    link_workspace_root = True,
     deps = [
-        "@npm//@opentelemetry/sdk-trace-base",
-        "@npm//@opentelemetry/sdk-trace-web",
+        "//hermes/example:hello_world_service_ts_proto",
         "@npm//@opentelemetry/api",
         "@npm//@opentelemetry/context-zone",
-        "@npm//@types/react",
-        "@npm//@types/react-dom",
+        "@npm//@opentelemetry/instrumentation",
+        "@npm//@opentelemetry/instrumentation-grpc",
+        "@npm//@opentelemetry/sdk-trace-base",
+        "@npm//@opentelemetry/sdk-trace-web",
         "@npm//@types/express",
-        "@npm//grpc-web",
         "@npm//@types/google-protobuf",
         "@npm//@types/node",
-        "//hermes/example:hello_world_service_ts_proto",
-        "@npm//@opentelemetry/instrumentation-grpc",
-        "@npm//@opentelemetry/instrumentation",
+        "@npm//@types/react",
+        "@npm//@types/react-dom",
+        "@npm//grpc-web",
     ],
-    tsconfig = "//:tsconfig"
 )
 
 nodejs_binary(
     name = "example",
-    link_workspace_root = True,
     data = [
         ":main",
     ],
     entry_point = ":main",
+    link_workspace_root = True,
 )
 
 webpack(
@@ -59,24 +59,25 @@ webpack(
         "-o",
         "$@",
     ],
-    link_workspace_root = True,
     data = [
         ":main",
-        "//hermes/example:hello_world_service_ts_proto",
         ":webpack",
+        "//hermes/example:hello_world_service_ts_proto",
         "@npm//:node_modules",
     ],
-    visibility = ["//visibility:public"]
+    link_workspace_root = True,
+    visibility = ["//visibility:public"],
 )
+
 ts_project(
     name = "webpack",
     srcs = [
         "webpack.config.ts",
     ],
-    deps = [
-        "@npm//@types/webpack",
-        "@npm//@bazel/runfiles",
-    ],
     link_workspace_root = True,
-    tsconfig = "//:tsconfig"
+    tsconfig = "//:tsconfig",
+    deps = [
+        "@npm//@bazel/runfiles",
+        "@npm//@types/webpack",
+    ],
 )

@@ -5,9 +5,9 @@ kt_jvm_binary(
     srcs = ["Main.kt"],
     main_class = "com.elfin.mta.example.Main",
     deps = [
+        "//java/com/elfin/mta:gtfs_realtime_kt_jvm_proto",
         "@flogger//api",
         "@maven//:com_squareup_okhttp3_okhttp",
         "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "//java/com/elfin/mta:gtfs_realtime_kt_jvm_proto"
     ],
 )

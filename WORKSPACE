@@ -23,12 +23,13 @@ git_repository(
 )
 
 load("@com_github_grpc_grpc_kotlin//:repositories.bzl", "grpc_kt_repositories")
+
 grpc_kt_repositories()
 
 git_repository(
     name = "build_bazel_rules_swift",
-    tag = "0.24.0",
     remote = "https://github.com/bazelbuild/rules_swift",
+    tag = "0.24.0",
 )
 
 load(
@@ -44,7 +45,6 @@ load(
 )
 
 swift_rules_extra_dependencies()
-
 
 git_repository(
     name = "rules_jvm_external",
@@ -113,8 +113,8 @@ git_repository(
 )
 
 load("@com_github_nelhage_rules_boost//:boost/boost.bzl", "boost_deps")
-boost_deps()
 
+boost_deps()
 
 git_repository(
     name = "com_google_fruit",
@@ -176,8 +176,8 @@ git_repository(
 
 git_repository(
     name = "rules_foreign_cc",
-    tag = "main",
     remote = "https://github.com/bazelbuild/rules_foreign_cc",
+    tag = "main",
 )
 
 git_repository(
@@ -189,7 +189,6 @@ git_repository(
 load("@com_github_grpc_grpc//bazel:grpc_deps.bzl", "grpc_deps")
 
 grpc_deps()
-
 
 git_repository(
     name = "com_googlesource_code_re2",
@@ -257,7 +256,9 @@ git_repository(
     branch = "main",
     remote = "https://github.com/hedronvision/bazel-compile-commands-extractor",
 )
+
 load("@hedron_compile_commands//:workspace_setup.bzl", "hedron_compile_commands_setup")
+
 hedron_compile_commands_setup()
 
 git_repository(
@@ -270,7 +271,7 @@ load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_depe
 
 go_rules_dependencies()
 
-# go_register_toolchains(version = "1.17.1")
+go_register_toolchains(go_version = "1.15.5")
 
 http_archive(
     name = "com_github_gflags_gflags",
@@ -298,8 +299,8 @@ maven_deps_install()
 
 git_repository(
     name = "rules_android",
-    tag = "v0.1.1",
     remote = "https://github.com/bazelbuild/rules_android",
+    tag = "v0.1.1",
 )
 
 git_repository(
@@ -312,19 +313,21 @@ load("@io_bazel_rules_kotlin_master//src/main/starlark/release_archive:repositor
 
 archive_repository(
     name = "io_bazel_rules_kotlin",
-    source_repository_name = "io_bazel_rules_kotlin_master"
+    source_repository_name = "io_bazel_rules_kotlin_master",
 )
 
 load("@io_bazel_rules_kotlin//kotlin:repositories.bzl", "kotlin_repositories")
+
 kotlin_repositories()
 
 load("@io_bazel_rules_kotlin//kotlin:core.bzl", "kt_register_toolchains")
+
 kt_register_toolchains()
 
 git_repository(
     name = "flogger",
-    tag = "flogger-0.7",
     remote = "https://github.com/google/flogger",
+    tag = "flogger-0.7",
 )
 
 # If this needs updating the hash value in the "strip_prefix" and "urls" lines

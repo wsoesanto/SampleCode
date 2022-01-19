@@ -4,33 +4,29 @@ kt_jvm_binary(
     name = "Main",
     srcs = ["Main.kt"],
     main_class = "com.elfin.atlas.example.Main",
+    runtime_deps = [
+        # For SL4J
+        "@maven//:org_apache_logging_log4j_log4j_slf4j_impl",
+        # For Flogger
+        "@maven//:com_google_flogger_flogger_log4j2_backend",
+        "@maven//:io_grpc_grpc_netty",
+    ],
     deps = [
-        "//hermes/example:hello_world_service_java_proto",
+        ":simple_component",
+        "//:dagger",
         "//hermes/example:hello_world_service_java_grpc",
+        "//hermes/example:hello_world_service_java_proto",
         "//hermes/example:hello_world_service_kt_jvm_grpc",
         "//hermes/example:hello_world_service_kt_jvm_proto",
-        "@io_grpc_grpc_java//api",
-        "@flogger//api",
-        "//:dagger",
-        ":simple_component",
-        "//java/com/elfin/atlas/components:components",
+        "//java/com/elfin/atlas/components",
         "//java/com/elfin/atlas/trace",
-        "@maven//:io_opentelemetry_opentelemetry_sdk_trace",
-        "@maven//:io_opentelemetry_opentelemetry_extension_kotlin",
+        "@flogger//api",
+        "@io_grpc_grpc_java//api",
         "@maven//:io_opentelemetry_instrumentation_opentelemetry_grpc_1_6",
+        "@maven//:io_opentelemetry_opentelemetry_extension_kotlin",
+        "@maven//:io_opentelemetry_opentelemetry_sdk_trace",
         "@maven//:org_jetbrains_kotlin_kotlin_stdlib_jdk8",
     ],
-    data = [
-        "log4j.properties"
-    ],
-    args = [
-        "-Dlog4j.configuration=java/com/elfin/atlas/example/log4j.properties"
-    ],
-    runtime_deps = [
-        "@maven//:org_slf4j_slf4j_log4j12",
-        "@flogger//api:system_backend",
-        "@maven//:io_grpc_grpc_netty",
-    ]
 )
 
 kt_jvm_library(

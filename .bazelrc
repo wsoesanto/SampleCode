@@ -3,7 +3,7 @@ build --javacopt="-Xep:BetaApi:OFF"
 build --host_javacopt="-Xep:BetaApi:OFF"
 build --java_toolchain=@bazel_tools//tools/jdk:toolchain_java8 --host_java_toolchain=@bazel_tools//tools/jdk:toolchain_java8
 build --javacopt="-Adagger.fullBindingGraphValidation=ERROR"
-build --experimental_google_legacy_api --incompatible_restrict_string_escapes=false
+build --experimental_google_legacy_api
 
 # Support for debugging NodeJS tests
 # Add the Bazel option `--config=debug` to enable this

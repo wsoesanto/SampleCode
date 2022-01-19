@@ -8,36 +8,36 @@ ts_project(
         "main.tsx",
     ],
     link_workspace_root = True,
+    tsconfig = "//:tsconfig",
     visibility = [
         "//visibility:public",
     ],
     deps = [
+        ":serving_context_ts_proto",
+        "@npm//@bazel/runfiles",
+        "@npm//@types/express",
+        "@npm//@types/google-protobuf",
         "@npm//@types/react",
         "@npm//@types/react-dom",
-        "@npm//@types/express",
-        ":serving_context_ts_proto",
-        "@npm//@types/google-protobuf",
-        "@npm//@bazel/runfiles",
     ],
-    tsconfig = "//:tsconfig"
 )
 
 nodejs_binary(
     name = "example",
-    link_workspace_root = True,
     data = [
         ":main",
         ":serving_context_ts_proto",
         "//uix/client/example:bundle",
     ],
     entry_point = ":main",
+    link_workspace_root = True,
 )
 
 proto_library(
     name = "serving_context_proto",
     srcs = [
         "serving_context.proto",
-    ]
+    ],
 )
 
 ts_proto_library(
@@ -45,5 +45,5 @@ ts_proto_library(
     proto = ":serving_context_proto",
     visibility = [
         "//visibility:public",
-    ]
+    ],
 )

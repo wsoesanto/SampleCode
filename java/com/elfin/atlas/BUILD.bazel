@@ -3,49 +3,53 @@ load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 kt_jvm_library(
     name = "coroutine_module",
     srcs = ["CoroutineModule.kt"],
-    deps = [
-        "//:dagger",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:com_google_guava_guava",
-        "@io_grpc_grpc_java//api",
-        "@com_github_grpc_grpc_kotlin//stub/src/main/java/io/grpc/kotlin:context",
-        "@maven//:io_opentelemetry_opentelemetry_extension_kotlin",
-    ],
     visibility = [
         "//visibility:public",
-    ]
+    ],
+    deps = [
+        "//:dagger",
+        "@com_github_grpc_grpc_kotlin//stub/src/main/java/io/grpc/kotlin:context",
+        "@io_grpc_grpc_java//api",
+        "@maven//:com_google_guava_guava",
+        "@maven//:io_opentelemetry_opentelemetry_extension_kotlin",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+    ],
 )
+
 kt_jvm_library(
     name = "network_module",
-    srcs = ["NetworkModule.kt",
-            "Rpc.kt"],
-    deps = [
-        "//:dagger",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:com_google_guava_guava",
+    srcs = [
+        "NetworkModule.kt",
+        "Rpc.kt",
     ],
     visibility = [
         "//visibility:public",
-    ]
+    ],
+    deps = [
+        "//:dagger",
+        "@maven//:com_google_guava_guava",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+    ],
 )
+
 kt_jvm_library(
     name = "trace_module",
     srcs = ["TraceModule.kt"],
-    deps = [
-        "//:dagger",
-        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
-        "@maven//:com_google_guava_guava",
-        "@maven//:io_opentelemetry_opentelemetry_sdk",
-        "@maven//:io_opentelemetry_opentelemetry_sdk_trace",
-        "@maven//:io_opentelemetry_opentelemetry_extension_kotlin",
-        "@maven//:io_opentelemetry_opentelemetry_api",
-        "@maven//:io_opentelemetry_instrumentation_opentelemetry_grpc_1_6",
-        "@maven//:io_opentelemetry_opentelemetry_bom",
-        "@maven//:io_opentelemetry_opentelemetry_api_common",
-        "@maven//:io_opentelemetry_opentelemetry_exporters_otlp",
-        "@maven//:io_opentelemetry_opentelemetry_exporters_logging",
-    ],
     visibility = [
         "//visibility:public",
-    ]
+    ],
+    deps = [
+        "//:dagger",
+        "@maven//:com_google_guava_guava",
+        "@maven//:io_opentelemetry_instrumentation_opentelemetry_grpc_1_6",
+        "@maven//:io_opentelemetry_opentelemetry_api",
+        "@maven//:io_opentelemetry_opentelemetry_api_common",
+        "@maven//:io_opentelemetry_opentelemetry_bom",
+        "@maven//:io_opentelemetry_opentelemetry_exporters_logging",
+        "@maven//:io_opentelemetry_opentelemetry_exporters_otlp",
+        "@maven//:io_opentelemetry_opentelemetry_extension_kotlin",
+        "@maven//:io_opentelemetry_opentelemetry_sdk",
+        "@maven//:io_opentelemetry_opentelemetry_sdk_trace",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+    ],
 )

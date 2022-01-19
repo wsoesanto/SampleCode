@@ -15,38 +15,37 @@ import javax.inject.Qualifier
 import javax.inject.Singleton
 
 @Module
-class TraceModule {
+object TraceModule {
 
-  companion object {
-    @JvmStatic
-    @Provides
-    @Singleton
-    @Internal
-    fun provideOpenTelemetry(): OpenTelemetry {
-      return OpenTelemetrySdk.builder()
-        .setTracerProvider(SdkTracerProvider.builder()
-                             .addSpanProcessor(SimpleSpanProcessor.create(LoggingSpanExporter()))
-                             .build())
-        .setPropagators(ContextPropagators.create(W3CTraceContextPropagator.getInstance()))
-        .build()
-    }
-
-    @JvmStatic
-    @Provides
-    @Singleton
-    fun provideGrpcTracing(
-      @Internal openTelemetry: OpenTelemetry): GrpcTracing {
-      return GrpcTracing.create(openTelemetry)
-    }
-
-    @JvmStatic
-    @Provides
-    @Singleton
-    fun provideTracer(@Internal openTelemetry: OpenTelemetry): Tracer {
-      return openTelemetry.getTracer("elfin")
-    }
-
-    @Qualifier
-    annotation class Internal
+  @JvmStatic
+  @Provides
+  @Singleton
+  @Internal
+  fun provideOpenTelemetry(): OpenTelemetry {
+    return OpenTelemetrySdk.builder()
+      .setTracerProvider(SdkTracerProvider.builder()
+                           .addSpanProcessor(SimpleSpanProcessor.create(LoggingSpanExporter()))
+                           .build())
+      .setPropagators(ContextPropagators.create(W3CTraceContextPropagator.getInstance()))
+      .build()
   }
+
+  @JvmStatic
+  @Provides
+  @Singleton
+  fun provideGrpcTracing(
+    @Internal openTelemetry: OpenTelemetry,
+  ): GrpcTracing {
+    return GrpcTracing.create(openTelemetry)
+  }
+
+  @JvmStatic
+  @Provides
+  @Singleton
+  fun provideTracer(@Internal openTelemetry: OpenTelemetry): Tracer {
+    return openTelemetry.getTracer("elfin")
+  }
+
+  @Qualifier
+  annotation class Internal
 }

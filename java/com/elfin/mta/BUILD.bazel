@@ -7,18 +7,18 @@ proto_library(
 
 java_proto_library(
     name = "gtfs_realtime_java_proto",
-    deps = [
-        ":gtfs_realtime_proto"
-    ],
     visibility = [
         "//visibility:public",
-    ]
+    ],
+    deps = [
+        ":gtfs_realtime_proto",
+    ],
 )
 
 kt_jvm_proto_library(
     name = "gtfs_realtime_kt_jvm_proto",
-    deps = [":gtfs_realtime_proto"],
     visibility = [
         "//visibility:public",
-    ]
+    ],
+    deps = [":gtfs_realtime_proto"],
 )

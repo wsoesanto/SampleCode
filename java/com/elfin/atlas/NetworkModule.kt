@@ -8,9 +8,7 @@ import java.util.concurrent.Executors
 import javax.inject.Singleton
 
 @Module
-class NetworkModule private constructor() {
-
-  companion object {
+object NetworkModule {
 
     @JvmStatic
     @Provides
@@ -19,5 +17,4 @@ class NetworkModule private constructor() {
     fun provideExecutor(): Executor = Executors.newFixedThreadPool(4,
                                                                    ThreadFactoryBuilder().setNameFormat(
                                                                      "grpc-thread-%d").build())
-  }
 }
