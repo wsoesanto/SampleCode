@@ -21,7 +21,6 @@ kt_jvm_proto_library(
         "//visibility:public",
     ],
     deps = [":gtfs_realtime_proto"],
-    deps = [":gtfs_realtime_proto"],
 )
 
 proto_library(

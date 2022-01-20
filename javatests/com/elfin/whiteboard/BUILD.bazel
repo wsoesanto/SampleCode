@@ -2,8 +2,9 @@ load("@io_bazel_rules_kotlin//kotlin:android.bzl", "kt_android_library")
 
 kt_android_library(
     name = "whiteboard",
+    testonly = 1,
     srcs = [
-        "MainActivity.kt",
+        "MainActivityTest.kt",
     ],
     deps = [
         "@maven//:androidx_activity_activity_compose",
