@@ -11,17 +11,11 @@ kt_jvm_binary(
     ],
     main_class = "com.elfin.atlas.example.Main",
     runtime_deps = [
-<<<<<<< Updated upstream
         # For SL4J
         "@maven//:org_apache_logging_log4j_log4j_slf4j_impl",
         # For Flogger
         "@maven//:com_google_flogger_flogger_log4j2_backend",
         "@maven//:io_grpc_grpc_netty",
-=======
-        "@flogger//api:system_backend",
-        "@maven//:io_grpc_grpc_netty",
-        "@maven//:org_slf4j_slf4j_log4j12",
->>>>>>> Stashed changes
     ],
     deps = [
         ":simple_component",
@@ -39,8 +33,6 @@ kt_jvm_binary(
         "@maven//:io_opentelemetry_opentelemetry_sdk_trace",
         "@maven//:org_jetbrains_kotlin_kotlin_stdlib_jdk8",
     ],
-<<<<<<< Updated upstream
-=======
 )
 
 kt_jvm_binary(
@@ -74,7 +66,6 @@ kt_jvm_binary(
         "@maven//:io_opentelemetry_opentelemetry_sdk_trace",
         "@maven//:org_jetbrains_kotlin_kotlin_stdlib_jdk8",
     ],
->>>>>>> Stashed changes
 )
 
 kt_jvm_library(

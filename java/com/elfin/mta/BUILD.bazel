@@ -17,15 +17,10 @@ java_proto_library(
 
 kt_jvm_proto_library(
     name = "gtfs_realtime_kt_jvm_proto",
-<<<<<<< Updated upstream
     visibility = [
         "//visibility:public",
     ],
     deps = [":gtfs_realtime_proto"],
-=======
-    visibility = [
-        "//visibility:public",
-    ],
     deps = [":gtfs_realtime_proto"],
 )
 
@@ -53,5 +48,4 @@ filegroup(
     visibility = [
         "//visibility:public",
     ],
->>>>>>> Stashed changes
 )

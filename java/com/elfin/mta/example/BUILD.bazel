@@ -9,11 +9,8 @@ kt_jvm_binary(
     main_class = "com.elfin.mta.example.Main",
     deps = [
         "//java/com/elfin/mta:gtfs_realtime_kt_jvm_proto",
-<<<<<<< Updated upstream
-=======
         "//java/com/elfin/mta:nyct_subway_kt_jvm_proto",
         "@bazel_tools//tools/java/runfiles",
->>>>>>> Stashed changes
         "@flogger//api",
         "@maven//:com_google_guava_guava",
         "@maven//:com_opencsv_opencsv",

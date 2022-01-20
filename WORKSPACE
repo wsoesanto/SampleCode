@@ -320,11 +320,11 @@ load("@io_bazel_rules_kotlin//kotlin:repositories.bzl", "kotlin_repositories")
 
 kotlin_repositories(
     compiler_release = {
-       "urls": [
-           "https://github.com/JetBrains/kotlin/releases/download/v1.5.31/kotlin-compiler-1.5.31.zip",
-       ],
-       "sha256": "661111286f3e5ac06aaf3a9403d869d9a96a176b62b141814be626a47249fe9e",
-   },
+        "urls": [
+            "https://github.com/JetBrains/kotlin/releases/download/v1.4.32/kotlin-compiler-1.4.32.zip",
+        ],
+        "sha256": "dfef23bb86bd5f36166d4ec1267c8de53b3827c446d54e82322c6b6daad3594c",
+    },
 )
 
 load("@io_bazel_rules_kotlin//kotlin:core.bzl", "kt_register_toolchains")
@@ -392,4 +392,5 @@ http_archive(
 )
 
 load("@android_test_support//:repo.bzl", "android_test_repositories")
+
 android_test_repositories()

@@ -3,11 +3,14 @@ load("@io_bazel_rules_kotlin//kotlin:android.bzl", "kt_android_library")
 kt_android_library(
     name = "lib",
     srcs = [
-        "MainActivity.kt"
+        "MainActivity.kt",
     ],
     deps = [
         "@maven//:androidx_appcompat_appcompat",
-    ]
+        "@maven//:androidx_test_core",
+        "@maven//:androidx_test_espresso_espresso_core",
+        "@maven//:androidx_test_runner",
+    ],
 )
 
 android_binary(
