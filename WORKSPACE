@@ -271,11 +271,7 @@ load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_depe
 
 go_rules_dependencies()
 
-<<<<<<< Updated upstream
 go_register_toolchains(go_version = "1.15.5")
-=======
-go_register_toolchains()
->>>>>>> Stashed changes
 
 http_archive(
     name = "com_github_gflags_gflags",
@@ -322,9 +318,6 @@ archive_repository(
 
 load("@io_bazel_rules_kotlin//kotlin:repositories.bzl", "kotlin_repositories")
 
-<<<<<<< Updated upstream
-kotlin_repositories()
-=======
 kotlin_repositories(
     compiler_release = {
        "urls": [
@@ -333,7 +326,6 @@ kotlin_repositories(
        "sha256": "661111286f3e5ac06aaf3a9403d869d9a96a176b62b141814be626a47249fe9e",
    },
 )
->>>>>>> Stashed changes
 
 load("@io_bazel_rules_kotlin//kotlin:core.bzl", "kt_register_toolchains")
 
@@ -390,8 +382,6 @@ exports_files(["WORKSPACE"], visibility = ["//visibility:public"])
 load("@io_grpc_grpc_java//:repositories.bzl", "grpc_java_repositories")
 
 grpc_java_repositories()
-<<<<<<< Updated upstream
-=======
 
 ATS_COMMIT = "8c41148e623d33ae38e1029b39576893429aede5"
 
@@ -400,6 +390,6 @@ http_archive(
     strip_prefix = "android-test-%s" % ATS_COMMIT,
     urls = ["https://github.com/android/android-test/archive/%s.tar.gz" % ATS_COMMIT],
 )
+
 load("@android_test_support//:repo.bzl", "android_test_repositories")
 android_test_repositories()
->>>>>>> Stashed changes
