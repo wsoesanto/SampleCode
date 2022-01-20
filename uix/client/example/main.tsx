@@ -8,7 +8,7 @@ import {WebTracerProvider} from '@opentelemetry/sdk-trace-web'
 import { ConsoleSpanExporter, SimpleSpanProcessor, Tracer} from '@opentelemetry/sdk-trace-base';
 import { render } from 'react-dom';
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
-import { GrpcInstrumentation } from '@opentelemetry/instrumentation-grpc';
+import { GrpcJsInstrumentation } from '@opentelemetry/instrumentation-grpc/build/src/grpc-js/index';
 
 async function start<T>(span: Span, fn: (span: Span) => Promise<T>): Promise<T> {
     try {
@@ -55,7 +55,7 @@ provider.register({
     contextManager: new ZoneContextManager()
 });
 registerInstrumentations({
-    instrumentations: [new GrpcInstrumentation()]
+    instrumentations: [new GrpcJsInstrumentation('@opentelemetry/instrumentation-grpc', '1.0', {})]
 });
 
 const tracer = new MyTracer(provider.getTracer('elfin'));

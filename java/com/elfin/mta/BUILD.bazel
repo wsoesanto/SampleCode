@@ -17,8 +17,41 @@ java_proto_library(
 
 kt_jvm_proto_library(
     name = "gtfs_realtime_kt_jvm_proto",
+<<<<<<< Updated upstream
     visibility = [
         "//visibility:public",
     ],
     deps = [":gtfs_realtime_proto"],
+=======
+    visibility = [
+        "//visibility:public",
+    ],
+    deps = [":gtfs_realtime_proto"],
+)
+
+proto_library(
+    name = "nyct_subway_proto",
+    srcs = ["nyct-subway.proto"],
+    deps = [
+        ":gtfs_realtime_proto",
+    ],
+)
+
+kt_jvm_proto_library(
+    name = "nyct_subway_kt_jvm_proto",
+    visibility = [
+        "//visibility:public",
+    ],
+    deps = [":nyct_subway_proto"],
+)
+
+filegroup(
+    name = "nyc",
+    srcs = [
+        "Stations.csv",
+    ],
+    visibility = [
+        "//visibility:public",
+    ],
+>>>>>>> Stashed changes
 )

@@ -3,13 +3,25 @@ load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary", "kt_jvm_library"
 kt_jvm_binary(
     name = "Main",
     srcs = ["Main.kt"],
+    args = [
+        "-Dlog4j.configuration=java/com/elfin/atlas/example/log4j.properties",
+    ],
+    data = [
+        "log4j.properties",
+    ],
     main_class = "com.elfin.atlas.example.Main",
     runtime_deps = [
+<<<<<<< Updated upstream
         # For SL4J
         "@maven//:org_apache_logging_log4j_log4j_slf4j_impl",
         # For Flogger
         "@maven//:com_google_flogger_flogger_log4j2_backend",
         "@maven//:io_grpc_grpc_netty",
+=======
+        "@flogger//api:system_backend",
+        "@maven//:io_grpc_grpc_netty",
+        "@maven//:org_slf4j_slf4j_log4j12",
+>>>>>>> Stashed changes
     ],
     deps = [
         ":simple_component",
@@ -27,6 +39,42 @@ kt_jvm_binary(
         "@maven//:io_opentelemetry_opentelemetry_sdk_trace",
         "@maven//:org_jetbrains_kotlin_kotlin_stdlib_jdk8",
     ],
+<<<<<<< Updated upstream
+=======
+)
+
+kt_jvm_binary(
+    name = "Client",
+    srcs = ["Client.kt"],
+    args = [
+        "-Dlog4j.configuration=java/com/elfin/atlas/example/log4j.properties",
+    ],
+    data = [
+        "log4j.properties",
+    ],
+    main_class = "com.elfin.atlas.example.Main",
+    runtime_deps = [
+        "@flogger//api:system_backend",
+        "@maven//:io_grpc_grpc_netty",
+        "@maven//:org_slf4j_slf4j_log4j12",
+    ],
+    deps = [
+        ":simple_component",
+        "//:dagger",
+        "//hermes/example:hello_world_service_java_grpc",
+        "//hermes/example:hello_world_service_java_proto",
+        "//hermes/example:hello_world_service_kt_jvm_grpc",
+        "//hermes/example:hello_world_service_kt_jvm_proto",
+        "//java/com/elfin/atlas/components",
+        "//java/com/elfin/atlas/trace",
+        "@flogger//api",
+        "@io_grpc_grpc_java//api",
+        "@maven//:io_opentelemetry_instrumentation_opentelemetry_grpc_1_6",
+        "@maven//:io_opentelemetry_opentelemetry_extension_kotlin",
+        "@maven//:io_opentelemetry_opentelemetry_sdk_trace",
+        "@maven//:org_jetbrains_kotlin_kotlin_stdlib_jdk8",
+    ],
+>>>>>>> Stashed changes
 )
 
 kt_jvm_library(

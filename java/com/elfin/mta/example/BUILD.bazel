@@ -3,11 +3,24 @@ load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary", "kt_jvm_library"
 kt_jvm_binary(
     name = "Main",
     srcs = ["Main.kt"],
+    data = [
+        "//java/com/elfin/mta:nyc",
+    ],
     main_class = "com.elfin.mta.example.Main",
     deps = [
         "//java/com/elfin/mta:gtfs_realtime_kt_jvm_proto",
+<<<<<<< Updated upstream
+=======
+        "//java/com/elfin/mta:nyct_subway_kt_jvm_proto",
+        "@bazel_tools//tools/java/runfiles",
+>>>>>>> Stashed changes
         "@flogger//api",
+        "@maven//:com_google_guava_guava",
+        "@maven//:com_opencsv_opencsv",
         "@maven//:com_squareup_okhttp3_okhttp",
+        "@maven//:com_squareup_okio_okio",
+        "@maven//:com_squareup_okio_okio_jvm",
+        "@maven//:de_siegmar_fastcsv",
         "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
     ],
 )

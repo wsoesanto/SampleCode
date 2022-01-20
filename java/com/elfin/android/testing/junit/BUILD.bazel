@@ -1,0 +1,12 @@
+load("@io_bazel_rules_kotlin//kotlin:android.bzl", "kt_android_library")
+
+kt_android_library(
+    name = "my_test_lib",
+    srcs = glob(["javatest/**/*.java"]),
+    deps = [
+        ":my_app_lib",
+        "@maven//:androidx_test_core",
+        "@maven//:androidx_test_runner",
+        "@maven//:androidx_test_espresso_espresso_core",
+    ],
+)

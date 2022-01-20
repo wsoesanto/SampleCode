@@ -1,0 +1,15 @@
+load("@io_bazel_rules_kotlin//kotlin:android.bzl", "kt_android_library")
+
+kt_android_library(
+    name = "whiteboard",
+    srcs = [
+        "MainActivity.kt",
+    ],
+    deps = [
+        "@maven//:com_google_dagger_dagger",
+        "@maven//:androidx_activity_activity_ktx",
+        "@maven//:androidx_activity_activity_compose",
+        "@maven//:androidx_appcompat_appcompat",
+        "@maven//:androidx_compose_material_material",
+    ]
+)
