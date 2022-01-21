@@ -3,6 +3,7 @@
   <component name="AttachedSourceJarManager">
     <library>libapi-hjar_6c709841</library>
     <library>hello_world_service_kt_jvm_grpc-kt-java_3e6ccb80</library>
+    <library>sdui_58a21d8c</library>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
@@ -20,33 +21,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65329038-2cf1-4d2b-8497-70ca4123e719" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Client.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/csv/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/csv/LineParser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/csv/Parser.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/mta/OMNY_Stops.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/mta/Stations.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/mta/nyct-subway.proto" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/mta/stops.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/whiteboard/BUILD.bazel" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/whiteboard/ExampleComposer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../WORKSPACE" beforeDir="false" afterPath="$PROJECT_DIR$/../WORKSPACE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../hermes/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../hermes/example/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/components/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/components/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/trace/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/trace/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/mta/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/mta/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/mta/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/mta/example/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/mta/example/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/mta/example/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repo/maven/deps.bzl" beforeDir="false" afterPath="$PROJECT_DIR$/../repo/maven/deps.bzl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repo/maven/jar/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../repo/maven/jar/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uix/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../uix/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uix/client/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../uix/client/example/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uix/client/example/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../uix/client/example/main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../uix/server/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../uix/server/example/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/BranchComponentContext.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/ComponentBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/ComponentContext.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/Components.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/Composer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/ContainerBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/DebugContext.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/ForwardingComponentContext.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/LeafComponentContext.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/RootBuilder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/example/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/sdui/example/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +45,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -70,6 +62,11 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../repo/maven/deps.bzl" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/components/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.bazelproject" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="9yz30he2" />
@@ -92,6 +89,29 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.elfin.sdui" />
+    </key>
+    <key name="KotlinExtractSuperclassDialog.RECENT_KEYS">
+      <recent name="com.elfin.sdui" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Bazel run example:Main" type="BlazeCommandRunConfigurationType" factoryName="Bazel Command" temporary="true" nameIsGenerated="true">
+      <blaze-settings handler-id="BlazeJavaRunConfigurationHandlerProvider" kind="kt_jvm_binary" blaze-command="run">
+        <blaze-target>//java/com/elfin/sdui/example:Main</blaze-target>
+      </blaze-settings>
+      <method v="2">
+        <option name="Blaze.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Bazel Command.Bazel run example:Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
