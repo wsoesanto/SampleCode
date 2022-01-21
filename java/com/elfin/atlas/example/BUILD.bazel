@@ -3,12 +3,6 @@ load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary", "kt_jvm_library"
 kt_jvm_binary(
     name = "Main",
     srcs = ["Main.kt"],
-    args = [
-        "-Dlog4j.configuration=java/com/elfin/atlas/example/log4j.properties",
-    ],
-    data = [
-        "log4j.properties",
-    ],
     main_class = "com.elfin.atlas.example.Main",
     runtime_deps = [
         # For SL4J
@@ -38,17 +32,13 @@ kt_jvm_binary(
 kt_jvm_binary(
     name = "Client",
     srcs = ["Client.kt"],
-    args = [
-        "-Dlog4j.configuration=java/com/elfin/atlas/example/log4j.properties",
-    ],
-    data = [
-        "log4j.properties",
-    ],
     main_class = "com.elfin.atlas.example.Main",
     runtime_deps = [
-        "@flogger//api:system_backend",
+        # For SL4J
+        "@maven//:org_apache_logging_log4j_log4j_slf4j_impl",
+        # For Flogger
+        "@maven//:com_google_flogger_flogger_log4j2_backend",
         "@maven//:io_grpc_grpc_netty",
-        "@maven//:org_slf4j_slf4j_log4j12",
     ],
     deps = [
         ":simple_component",
@@ -82,5 +72,21 @@ kt_jvm_library(
     srcs = ["SimpleModule.kt"],
     deps = [
         "//:dagger",
+    ],
+)
+
+kt_jvm_binary(
+    name = "Beam",
+    srcs = ["Beam.kt"],
+    main_class = "com.elfin.atlas.example.Main",
+    runtime_deps = [
+        # For SL4J
+        "@maven//:org_apache_logging_log4j_log4j_slf4j_impl",
+        # For Flogger
+        "@maven//:com_google_flogger_flogger_log4j2_backend",
+        "@maven//:io_grpc_grpc_netty",
+    ],
+    deps = [
+        "@maven//:org_apache_beam_beam_sdks_java_core"
     ],
 )

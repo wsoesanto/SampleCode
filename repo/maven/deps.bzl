@@ -25,6 +25,7 @@ _MAVEN_DEPS = [
     "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.0",
     "androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.0",
     "androidx.navigation:navigation-fragment:2.3.5",
+    "org.apache.beam:beam-sdks-java-core:2.35.0",
     "androidx.navigation:navigation-fragment-ktx:2.3.5",
     "androidx.navigation:navigation-ui:2.3.5",
     "androidx.navigation:navigation-ui-ktx:2.3.5",

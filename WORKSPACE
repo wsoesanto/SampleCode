@@ -12,7 +12,7 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 git_repository(
     name = "io_grpc_grpc_java",
-    branch = "master",
+    tag = "v1.38.0",
     remote = "https://github.com/grpc/grpc-java",
 )
 
@@ -95,13 +95,13 @@ git_repository(
 
 git_repository(
     name = "com_github_cncf_udpa",
-    branch = "master",
+    branch = "main",
     remote = "https://github.com/cncf/udpa",
 )
 
 git_repository(
     name = "build_bazel_rules_nodejs",
-    branch = "stable",
+    tag = "4.5.0",
     remote = "https://github.com/bazelbuild/rules_nodejs",
 )
 
@@ -234,7 +234,7 @@ rules_nodejs_dev_dependencies()
 
 git_repository(
     name = "build_bazel_rules_typescript",
-    branch = "stable",
+    tag = "4.5.0",
     remote = "https://github.com/bazelbuild/rules_nodejs",
     strip_prefix = "third_party/github.com/bazelbuild/rules_typescript",
 )
@@ -352,12 +352,7 @@ http_archive(
 
 load("@google_bazel_common//:workspace_defs.bzl", "google_common_workspace_rules")
 
-#google_common_workspace_rules()
-
-android_sdk_repository(
-    name = "androidsdk",
-    api_level = 32,
-)
+google_common_workspace_rules()
 
 http_archive(
     name = "openjdk8",
