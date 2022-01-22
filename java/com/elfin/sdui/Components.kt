@@ -20,6 +20,6 @@ class Container {
     setUpDebugCtx: suspend DebugContext.() -> Unit = {},
     setUpChildren: suspend (BranchComponentContext<ContainerBuilder>) -> Unit = {},
   ) {
-    container(parent.deferredChild(), setUpDebugCtx, setUpChildren)
+    invoke(parent.deferredChild(), setUpDebugCtx, setUpChildren)
   }
 }

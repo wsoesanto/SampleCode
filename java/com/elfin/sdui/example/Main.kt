@@ -3,7 +3,6 @@ package com.elfin.sdui.example
 import com.elfin.sdui.Composer
 import com.elfin.sdui.Container
 import com.elfin.sdui.ContainerBuilder
-import com.elfin.sdui.container
 import kotlinx.coroutines.async
 import kotlinx.coroutines.awaitAll
 import kotlinx.coroutines.runBlocking
