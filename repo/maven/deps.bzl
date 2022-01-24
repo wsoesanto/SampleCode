@@ -11,6 +11,7 @@ _MAVEN_DEPS = [
     "androidx.compose.animation:animation:1.0.5",
     "androidx.compose.material:material:1.0.5",
     "androidx.compose.ui:ui-tooling:1.0.5",
+    "androidx.startup:startup-runtime:1.0.0",
     "androidx.constraintlayout:constraintlayout:2.1.1",
     "androidx.fragment:fragment:1.2.4",
     "androidx.fragment:fragment-ktx:1.2.4",
@@ -228,6 +229,10 @@ def get_bazel_maven_target_names():
 
 def maven_deps_install():
     maven_install(
+        override_targets = {
+           # Override the maven dep with the fixed target
+           "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm": "@//java/sun/misc:kotlinx_coroutines_core_jvm_fixed",
+       },
         artifacts = _MAVEN_DEPS,
         repositories = [
             "https://repo1.maven.org/maven2",
@@ -240,6 +245,15 @@ def maven_deps_install():
             "https://repo1.maven.org/maven2",
         ] + DAGGER_REPOSITORIES,
     )
+    # Create a second maven repository that downloads the original kotlinx-coroutines-core-jvm
+    # jar. This will be used to override the root @maven target with the hacked
+    # version compiled against the neverlink sun dependencies.
+    maven_install(
+        name = "kotlinx_coroutines_core_fixed",
+        artifacts = ["org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:jar:1.5.0"],
+        repositories = ["https://repo1.maven.org/maven2"],
+    )
+
 
     for dep in _MAVEN_DEPS:
         native.bind(

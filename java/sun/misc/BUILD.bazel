@@ -1,0 +1,23 @@
+java_library(
+    name = "fake",
+    srcs = [
+        "SignalHandler.java"
+    ],
+    visibility = [
+        "//visibility:public",
+    ],
+    neverlink = True,
+    deps = [],
+)
+
+
+java_library(
+    name = "kotlinx_coroutines_core_jvm_fixed",
+    exports = [
+        "@kotlinx_coroutines_core_fixed//:org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm",
+        ":fake",
+		"@maven//:org_jetbrains_kotlin_kotlin_stdlib_common",
+		"@maven//:org_jetbrains_kotlin_kotlin_stdlib_jdk8",
+    ],
+    visibility = ["//visibility:public"],
+)

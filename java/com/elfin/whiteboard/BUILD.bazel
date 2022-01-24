@@ -1,7 +1,7 @@
 load("@io_bazel_rules_kotlin//kotlin:android.bzl", "kt_android_library")
 
 kt_android_library(
-    name = "whiteboard",
+    name = "activity",
     srcs = [
         "MainActivity.kt",
     ],
@@ -11,5 +11,25 @@ kt_android_library(
         "@maven//:androidx_appcompat_appcompat",
         "@maven//:androidx_compose_material_material",
         "@maven//:com_google_dagger_dagger",
+        ":resources",
     ],
+)
+
+android_binary(
+    name = "whiteboard",
+    manifest = "AndroidManifest.xml",
+    deps = [
+        ":activity",
+        ":resources",
+        "//java/sun/misc:fake",
+    ],
+)
+
+android_library(
+    name = "resources",
+    exports_manifest = 1,
+    manifest = "AndroidManifest.xml",
+    deps = [
+        "@maven//:androidx_startup_startup_runtime",
+    ]
 )

@@ -5,10 +5,11 @@ workspace(
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-#android_sdk_repository(
-#    name = "androidsdk",  # Required. Name *must* be "androidsdk".
-#     path = "/Users/willys/Library/Android/sdk",  # Optional. Can be omitted if `ANDROID_HOME` environment variable is set.
-#)
+android_sdk_repository(
+    name = "androidsdk",
+    api_level = 29,
+    build_tools_version = "30.0.0"
+)
 
 git_repository(
     name = "io_grpc_grpc_java",
@@ -352,7 +353,7 @@ http_archive(
 
 load("@google_bazel_common//:workspace_defs.bzl", "google_common_workspace_rules")
 
-google_common_workspace_rules()
+#google_common_workspace_rules()
 
 http_archive(
     name = "openjdk8",
