@@ -201,7 +201,11 @@ _MAVEN_DEPS = [
     "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.4.0",
     "org.jetbrains.kotlinx:kotlinx-coroutines-debug:1.3.5",
     "org.jetbrains.kotlinx:kotlinx-metadata-jvm:0.3.0",
-    #    "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0-1.4.0-rc-95",
+    "com.facebook.litho:litho-core:0.41.1",
+    "com.facebook.litho:litho-widget:0.41.1",
+    "com.facebook.litho:litho-processor:0.41.1",
+    "com.facebook.soloader:soloader:0.9.0",
+    "com.facebook.litho:litho-testing:0.41.1",
     "com.google.flogger:flogger-log4j2-backend:0.7.4",
     "com.google.j2objc:j2objc-annotations:1.3",
     "com.google.protobuf:protobuf-kotlin:3.17.0-rc-2",
@@ -229,10 +233,6 @@ def get_bazel_maven_target_names():
 
 def maven_deps_install():
     maven_install(
-        override_targets = {
-           # Override the maven dep with the fixed target
-           "org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm": "@//java/sun/misc:kotlinx_coroutines_core_jvm_fixed",
-       },
         artifacts = _MAVEN_DEPS,
         repositories = [
             "https://repo1.maven.org/maven2",
@@ -244,14 +244,6 @@ def maven_deps_install():
             "https://mvnrepository.com",
             "https://repo1.maven.org/maven2",
         ] + DAGGER_REPOSITORIES,
-    )
-    # Create a second maven repository that downloads the original kotlinx-coroutines-core-jvm
-    # jar. This will be used to override the root @maven target with the hacked
-    # version compiled against the neverlink sun dependencies.
-    maven_install(
-        name = "kotlinx_coroutines_core_fixed",
-        artifacts = ["org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:jar:1.5.0"],
-        repositories = ["https://repo1.maven.org/maven2"],
     )
 
 
