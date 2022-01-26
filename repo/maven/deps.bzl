@@ -1,11 +1,8 @@
 load("@rules_jvm_external//:defs.bzl", "maven_install")
-load("@dagger//:workspace_defs.bzl", "DAGGER_ARTIFACTS", "DAGGER_REPOSITORIES")
+load("@dagger//:workspace_defs.bzl", "DAGGER_ARTIFACTS", "DAGGER_REPOSITORIES", "HILT_ANDROID_ARTIFACTS")
 
 _MAVEN_DEPS = [
     # keep sorted
-    "androidx.activity:activity:1.3.0",
-    "androidx.activity:activity-ktx:1.3.0",
-    "androidx.appcompat:appcompat:1.3.0",
     "org.apache.beam:beam-sdks-java-core:2.35.0",
     "antlr:antlr:2.7.7",
     "aopalliance:aopalliance:1.0",
@@ -192,7 +189,7 @@ _MAVEN_DEPS = [
     "org.slf4j:slf4j-api:1.7.26",
     "org.slf4j:slf4j-ext:1.7.26",
     "org.tukaani:xz:1.8",
-] + DAGGER_ARTIFACTS
+] + DAGGER_ARTIFACTS + HILT_ANDROID_ARTIFACTS
 
 def _get_bazel_maven_target_name(name):
     return name.rpartition(":")[0].replace("-", "_").replace(".", "_").replace(":", "_")

@@ -1,6 +1,17 @@
 load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
 
 kt_jvm_library(
+    name = "grpc_server",
+    srcs = ["GrpcServer.kt"],
+    visibility = [
+        "//visibility:public",
+    ],
+    deps = [
+        "//:hilt",
+    ],
+)
+
+kt_jvm_library(
     name = "coroutine_module",
     srcs = ["CoroutineModule.kt"],
     visibility = [

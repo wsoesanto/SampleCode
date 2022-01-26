@@ -25,56 +25,74 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="kotlin-stdlib-jdk8-1.5.32_354032ef" level="project" />
-    <orderEntry type="library" name="opentelemetry-sdk-1.9.1_6b4d591e" level="project" />
+    <orderEntry type="library" name="header_api-common-2.1.2_74e95fc9" level="project" />
+    <orderEntry type="library" name="header_opentelemetry-sdk-1.9.1_be43ab7f" level="project" />
+    <orderEntry type="library" name="header_opencsv-5.5.2_2bd56f10" level="project" />
+    <orderEntry type="library" name="header_google-cloud-core-2.3.5_e277d794" level="project" />
     <orderEntry type="library" name="kotlin-stdlib_b9131a" level="project" />
-    <orderEntry type="library" name="opentelemetry-api-1.9.1_733f2efe" level="project" />
-    <orderEntry type="library" name="hello_world_service_kt_jvm_grpc-kt-java_3e6ccb80" level="project" />
-    <orderEntry type="library" name="opentelemetry-grpc-1.6-1.9.0-alpha_3265b357" level="project" />
-    <orderEntry type="library" name="opentelemetry-sdk-trace-1.9.1_c52ac9d6" level="project" />
-    <orderEntry type="library" name="context-kt-java_771d0e57" level="project" />
+    <orderEntry type="library" name="header_opentelemetry-api-1.9.1_c635815f" level="project" />
+    <orderEntry type="library" name="header_opentelemetry-grpc-1.6-1.9.0-alpha_e93fec56" level="project" />
+    <orderEntry type="library" name="header_opentelemetry-sdk-trace-1.9.1_51d80f77" level="project" />
+    <orderEntry type="library" name="header_okhttp-4.10.0-RC1_317b296c" level="project" />
+    <orderEntry type="library" name="header_guava-31.0.1-jre_9c34fe1" level="project" />
+    <orderEntry type="library" name="header_google-cloud-spanner-6.17.4_ebbf0868" level="project" />
     <orderEntry type="library" name="Home_e870e125" level="project" />
-    <orderEntry type="library" name="opentelemetry-extension-kotlin-1.9.1_f17e228b" level="project" />
     <orderEntry type="library" name="libcore-hjar_fb5cd0ab" level="project" />
+    <orderEntry type="library" name="header_opentelemetry-extension-kotlin-1.9.1_3de675ca" level="project" />
     <orderEntry type="library" name="kotlin-stdlib-jdk7_b9131a" level="project" />
-    <orderEntry type="library" name="opentelemetry-exporters-logging-0.9.1_5f48b0a7" level="project" />
-    <orderEntry type="library" name="kotlinx-coroutines-core-jvm-1.5.0_d7a95c83" level="project" />
+    <orderEntry type="library" name="header_opentelemetry-exporters-logging-0.9.1_9feac548" level="project" />
+    <orderEntry type="library" name="header_kotlinx-coroutines-core-jvm-1.5.0_ab49dc02" level="project" />
     <orderEntry type="library" name="liblite_runtime_only-hjar_fb5cd0ab" level="project" />
     <orderEntry type="library" name="kotlin-stdlib-jdk8_b9131a" level="project" />
-    <orderEntry type="library" name="stub-kt-java_771d0e57" level="project" />
-    <orderEntry type="library" name="dagger-HEAD-20220120.024829-792_65842119" level="project" />
-    <orderEntry type="library" name="libapi-hjar_6c709841" level="project" />
+    <orderEntry type="library" name="header_kotlinx-coroutines-guava-1.2.1_bffc6863" level="project" />
     <orderEntry type="library" name="header_opentelemetry-context-1.10.0_56a25429" level="project" />
+    <orderEntry type="library" name="header_javax.inject-1_9a5ee754" level="project" />
     <orderEntry type="library" name="hello_world_service_kt_jvm_proto-kt-java_3e6ccb80" level="project" />
-    <orderEntry type="library" name="javax.inject-1_21b08355" level="project" />
     <orderEntry type="library" name="libchecks-hjar_eb7f4efc" level="project" />
-    <orderEntry type="library" name="nyct_subway_kt_jvm_proto-kt-java_23e41dd3" level="project" />
-    <orderEntry type="library" name="gtfs_realtime_kt_jvm_proto-kt-java_23e41dd3" level="project" />
+    <orderEntry type="library" name="opentelemetry-api-1.9.1_733f2efe" level="project" />
+    <orderEntry type="library" name="jsr250-api-1.0_11380941" level="project" />
+    <orderEntry type="library" name="hilt-core-HEAD-20220126.011437-489_ec4303b8" level="project" />
     <orderEntry type="library" name="libapi-hjar_eb7f4efc" level="project" />
-    <orderEntry type="library" name="fastcsv-2.1.0_f25a1736" level="project" />
-    <orderEntry type="library" name="okio-jvm-3.0.0_f6812afd" level="project" />
-    <orderEntry type="library" name="librunfiles-hjar_82fe262f" level="project" />
+    <orderEntry type="library" name="libapi-hjar_6c709841" level="project" />
+    <orderEntry type="library" name="hello_world_service_kt_jvm_grpc-kt-java_3e6ccb80" level="project" />
+    <orderEntry type="library" name="dagger-HEAD-20220126.011227-798_65842119" level="project" />
+    <orderEntry type="library" name="javax.inject-1_21b08355" level="project" />
     <orderEntry type="library" name="guava-31.0.1-jre_91562722" level="project" />
-    <orderEntry type="library" name="opencsv-5.5.2_1f301751" level="project" />
+    <orderEntry type="library" name="kotlin-stdlib-jdk8-1.5.32_354032ef" level="project" />
+    <orderEntry type="library" name="opentelemetry-exporters-otlp-0.9.1_161f35df" level="project" />
+    <orderEntry type="library" name="opentelemetry-extension-kotlin-1.9.1_f17e228b" level="project" />
+    <orderEntry type="library" name="libhello_world_service_java_grpc-hjar_3e6ccb80" level="project" />
+    <orderEntry type="library" name="context-kt-java_771d0e57" level="project" />
+    <orderEntry type="library" name="beam-sdks-java-core-2.35.0_407753a0" level="project" />
+    <orderEntry type="library" name="opentelemetry-api-common-0.13.1_e4b61348" level="project" />
+    <orderEntry type="library" name="opentelemetry-sdk-1.9.1_6b4d591e" level="project" />
+    <orderEntry type="library" name="stub-kt-java_771d0e57" level="project" />
+    <orderEntry type="library" name="opentelemetry-sdk-trace-1.9.1_c52ac9d6" level="project" />
+    <orderEntry type="library" name="opentelemetry-exporters-logging-0.9.1_5f48b0a7" level="project" />
+    <orderEntry type="library" name="opentelemetry-grpc-1.6-1.9.0-alpha_3265b357" level="project" />
+    <orderEntry type="library" name="libhello_world_service_kt_jvm_grpc_DO_NOT_DEPEND_java_grpc-hjar_3e6ccb80" level="project" />
     <orderEntry type="library" name="kotlinx-coroutines-core-1.5.0_4dbcfc2f" level="project" />
-    <orderEntry type="library" name="okio-3.0.0_aa197129" level="project" />
-    <orderEntry type="library" name="okhttp-4.10.0-RC1_e601b2cb" level="project" />
     <orderEntry type="library" name="Main_301e1fe7" level="project" />
-    <orderEntry type="library" name="network_module_baab1084" level="project" />
-    <orderEntry type="library" name="trace_module_baab1084" level="project" />
-    <orderEntry type="library" name="sdui_58a21d8c" level="project" />
     <orderEntry type="library" name="Client_5d609adf" level="project" />
-    <orderEntry type="library" name="trace_cfa153fa" level="project" />
-    <orderEntry type="library" name="Main_5d609adf" level="project" />
     <orderEntry type="library" name="simple_component_5d609adf" level="project" />
+    <orderEntry type="library" name="Beam_5d609adf" level="project" />
     <orderEntry type="library" name="libgtfs_realtime_proto-speed-hjar_23e41dd3" level="project" />
     <orderEntry type="library" name="Main_b85ae92e" level="project" />
     <orderEntry type="library" name="libnyct_subway_proto-speed-hjar_23e41dd3" level="project" />
+    <orderEntry type="library" name="mongodb_2e8a722b" level="project" />
     <orderEntry type="library" name="simple_module_5d609adf" level="project" />
     <orderEntry type="library" name="libhello_world_service_proto-speed-hjar_3e6ccb80" level="project" />
     <orderEntry type="library" name="coroutine_module_baab1084" level="project" />
     <orderEntry type="library" name="slf4j_fbc03cec" level="project" />
     <orderEntry type="library" name="components_c9b58981" level="project" />
+    <orderEntry type="library" name="network_module_baab1084" level="project" />
+    <orderEntry type="library" name="trace_module_baab1084" level="project" />
+    <orderEntry type="library" name="sdui_58a21d8c" level="project" />
+    <orderEntry type="library" name="trace_cfa153fa" level="project" />
+    <orderEntry type="library" name="Main_5d609adf" level="project" />
+    <orderEntry type="library" name="api_aa1e38eb" level="project" />
+    <orderEntry type="library" name="grpc_server_baab1084" level="project" />
+    <orderEntry type="library" name="Main_59afb0bd" level="project" />
     <orderEntry type="library" name="kotlin-stdlib_b9131a" level="project" />
   </component>
 </module>

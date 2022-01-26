@@ -13,6 +13,7 @@ kt_jvm_binary(
     ],
     deps = [
         ":simple_component",
+        "//java/com/elfin/atlas:grpc_server",
         "//:dagger",
         "//hermes/example:hello_world_service_java_grpc",
         "//hermes/example:hello_world_service_java_proto",
