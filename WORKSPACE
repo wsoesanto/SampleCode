@@ -322,9 +322,9 @@ load("@io_bazel_rules_kotlin//kotlin:repositories.bzl", "kotlin_repositories")
 kotlin_repositories(
     compiler_release = {
         "urls": [
-            "https://github.com/JetBrains/kotlin/releases/download/v1.4.32/kotlin-compiler-1.4.32.zip",
+            "https://github.com/JetBrains/kotlin/releases/download/v1.5.0/kotlin-compiler-1.5.0.zip",
         ],
-        "sha256": "dfef23bb86bd5f36166d4ec1267c8de53b3827c446d54e82322c6b6daad3594c",
+        "sha256": "0343fc1f628fec1beccc9e534d2b8b7a0f8964b97e21563585d44d6d928ed1b7",
     },
 )
 
@@ -351,10 +351,6 @@ http_archive(
     urls = ["https://github.com/google/bazel-common/archive/4a8d451e57fb7e1efecbf9495587a10684a19eb2.zip"],
 )
 
-load("@google_bazel_common//:workspace_defs.bzl", "google_common_workspace_rules")
-
-#google_common_workspace_rules()
-
 http_archive(
     name = "openjdk8",
     build_file_content = """
@@ -379,14 +375,14 @@ load("@io_grpc_grpc_java//:repositories.bzl", "grpc_java_repositories")
 
 grpc_java_repositories()
 
-ATS_COMMIT = "8c41148e623d33ae38e1029b39576893429aede5"
-
-http_archive(
-    name = "android_test_support",
-    strip_prefix = "android-test-%s" % ATS_COMMIT,
-    urls = ["https://github.com/android/android-test/archive/%s.tar.gz" % ATS_COMMIT],
-)
-
-load("@android_test_support//:repo.bzl", "android_test_repositories")
-
-android_test_repositories()
+#ATS_COMMIT = "8c41148e623d33ae38e1029b39576893429aede5"
+#
+#http_archive(
+#    name = "android_test_support",
+#    strip_prefix = "android-test-%s" % ATS_COMMIT,
+#    urls = ["https://github.com/android/android-test/archive/%s.tar.gz" % ATS_COMMIT],
+#)
+#
+#load("@android_test_support//:repo.bzl", "android_test_repositories")
+#
+#android_test_repositories()
