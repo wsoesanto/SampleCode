@@ -1,0 +1,15 @@
+load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library", "kt_jvm_binary")
+
+kt_jvm_binary(
+    name = "Main",
+    srcs = [
+        "Main.kt"
+    ],
+    main_class = "com.elfin.google.spanner.example.Main",
+    deps = [
+        "@maven//:com_google_api_api_common",
+        "@maven//:com_google_cloud_google_cloud_spanner",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_guava",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+    ]
+)

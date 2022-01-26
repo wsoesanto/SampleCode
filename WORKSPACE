@@ -13,7 +13,7 @@ android_sdk_repository(
 
 git_repository(
     name = "io_grpc_grpc_java",
-    tag = "v1.38.0",
+    tag = "v1.43.2",
     remote = "https://github.com/grpc/grpc-java",
 )
 
