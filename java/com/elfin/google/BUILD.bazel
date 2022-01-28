@@ -15,3 +15,18 @@ kt_jvm_library(
         "@maven//:com_google_auth_google_auth_library_oauth2_http",
     ],
 )
+
+kt_jvm_library(
+    name = "ktx",
+    srcs = [
+        "ApiFutureKtx.kt",
+    ],
+    visibility = [
+        "//visibility:public",
+    ],
+    deps = [
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_guava",
+        "@maven//:com_google_cloud_google_cloud_firestore",
+    ],
+)

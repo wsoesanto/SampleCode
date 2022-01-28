@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_package = "com.elfin.google.firebase.example";
+
+message Account {
+  AccountId id = 1;
+
+  string name = 2;
+
+  Timestamp registration_time = 3;
+}
+
+message Timestamp {
+  int64 literal = 1;
+}
+
+message AccountId {
+  int32 literal = 1;
+}

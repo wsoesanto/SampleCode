@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+option java_package = "com.elfin.google.firebase.store";
+option java_multiple_files = true;
+
+message Example {
+
+  optional string field = 1;
+
+  optional SubExample field_2 = 2;
+
+}
+
+message SubExample {
+
+  optional int32 field_1 = 1;
+
+  optional float field_2 = 2;
+}

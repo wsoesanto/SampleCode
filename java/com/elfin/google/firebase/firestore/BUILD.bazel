@@ -1,17 +1,16 @@
 load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
-load("@com_github_grpc_grpc_kotlin//:kt_jvm_grpc.bzl", "kt_jvm_proto_library")
 
 kt_jvm_library(
-    name = "Main",
+    name = "ext",
     srcs = [
-        "Main.kt",
+        "ProtoKtx.kt",
     ],
     visibility = [
         "//visibility:public",
     ],
     deps = [
         "//:dagger",
-        ":account_kt_jvm_proto",
+        "@com_google_protobuf//java/core",
         "@maven//:com_google_firebase_firebase_admin",
         "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
         "@maven//:com_google_cloud_google_cloud_firestore",
@@ -19,17 +18,6 @@ kt_jvm_library(
         "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_guava",
         "@maven//:com_google_api_api_common",
         "//java/com/elfin/google:ktx",
+        "@maven//:com_google_guava_guava",
     ],
-)
-
-proto_library(
-    name = "account_proto",
-    srcs = ["account.proto"],
-)
-
-kt_jvm_proto_library(
-    name = "account_kt_jvm_proto",
-    deps = [
-        ":account_proto",
-    ]
 )

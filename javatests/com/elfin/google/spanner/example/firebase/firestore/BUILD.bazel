@@ -1,0 +1,27 @@
+load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_test")
+load("@com_github_grpc_grpc_kotlin//:kt_jvm_grpc.bzl", "kt_jvm_proto_library")
+
+kt_jvm_test(
+    name = "ProtoKtxTest",
+    srcs = [
+        "ProtoKtxTest.kt",
+    ],
+    deps = [
+        "//java/com/elfin/google/firebase/firestore:ext",
+        "@maven//:junit_junit",
+        "@maven//:com_google_truth_truth",
+        ":message_kt_jvm_proto"
+    ]
+)
+
+proto_library(
+    name = "message_proto",
+    srcs = ["message.proto"],
+)
+
+kt_jvm_proto_library(
+    name = "message_kt_jvm_proto",
+    deps = [
+        ":message_proto",
+    ]
+)
