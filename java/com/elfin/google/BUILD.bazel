@@ -1,0 +1,17 @@
+load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
+
+kt_jvm_library(
+    name = "module",
+    srcs = [
+        "GoogleCloudModule.kt",
+    ],
+    visibility = [
+        "//visibility:public",
+    ],
+    deps = [
+        "//:dagger",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@maven//:com_google_auth_google_auth_library_credentials",
+        "@maven//:com_google_auth_google_auth_library_oauth2_http",
+    ],
+)

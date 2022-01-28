@@ -21,15 +21,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65329038-2cf1-4d2b-8497-70ca4123e719" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/GrpcServer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Root.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.blaze/modules/.workspace.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BUILD" beforeDir="false" afterPath="$PROJECT_DIR$/../BUILD" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../repo/maven/deps.bzl" beforeDir="false" afterPath="$PROJECT_DIR$/../repo/maven/deps.bzl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/hilt/BUILD.bazel" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/hilt/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../java/com/elfin/atlas/hilt/MainModule.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +52,16 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/example/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/example/Main.kt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/NetworkModule.kt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/example/Client.kt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../repo/maven/deps.bzl" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/components/BUILD.bazel" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/CoroutineModule.kt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.bazelproject" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../java/com/elfin/atlas/components/SingletonComponent.kt" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="9yz30he2" />

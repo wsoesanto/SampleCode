@@ -1,0 +1,22 @@
+load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_library")
+
+kt_jvm_library(
+    name = "Main",
+    srcs = [
+        "Main.kt",
+    ],
+    visibility = [
+        "//visibility:public",
+    ],
+    deps = [
+        "//:dagger",
+        "@maven//:com_google_firebase_firebase_admin",
+#        "@maven//:com_google_firebase_firebase_core",
+#        "@maven//:com_google_firebase_firebase_firestore",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_core",
+        "@maven//:com_google_cloud_google_cloud_firestore",
+        "@maven//:com_google_auth_google_auth_library_oauth2_http",
+        "@maven//:org_jetbrains_kotlinx_kotlinx_coroutines_guava",
+        "@maven//:com_google_api_api_common",
+    ],
+)

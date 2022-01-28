@@ -1,7 +1,12 @@
 # Disable The Guava Beta Checker.
 build --javacopt="-Xep:BetaApi:OFF"
 build --host_javacopt="-Xep:BetaApi:OFF"
-build --java_toolchain=@bazel_tools//tools/jdk:toolchain_java8 --host_java_toolchain=@bazel_tools//tools/jdk:toolchain_java8
+
+# Include debug info in the compiled jars
+build --javacopt=-g
+build --host_javacopt=-g
+
+# build --java_toolchain=@bazel_tools//tools/jdk:toolchain_java8 --host_java_toolchain=@bazel_tools//tools/jdk:toolchain_java8
 build --javacopt="-Adagger.fullBindingGraphValidation=ERROR"
 build --experimental_google_legacy_api --incompatible_java_common_parameters=false
 
@@ -42,5 +47,3 @@ build:debug --compilation_mode=dbg
 build --client_env=CC=clang
 # We require C++17, but bazel defaults to C++0x (pre-C++11).
 build --cxxopt=-std=c++17 --host_cxxopt=-std=c++17 --client_env=BAZEL_CXXOPTS=-std=c++17
-
---android_aapt=aapt2
