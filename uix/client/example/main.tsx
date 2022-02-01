@@ -1,4 +1,4 @@
-// import React from 'react';
+import {ReactElement, useEffect, useState} from 'react';
 // import {render} from 'react-dom';
 import { SayHelloRequest, SayHelloResponse } from 'SampleCode/hermes/example/hello_world_service_pb';
 import {HelloWorldServicePromiseClient} from 'SampleCode/hermes/example/hello_world_service_grpc_web_pb';
@@ -8,7 +8,6 @@ import {WebTracerProvider} from '@opentelemetry/sdk-trace-web'
 import { ConsoleSpanExporter, SimpleSpanProcessor, Tracer} from '@opentelemetry/sdk-trace-base';
 import { render } from 'react-dom';
 import { registerInstrumentations } from '@opentelemetry/instrumentation';
-import { GrpcJsInstrumentation } from '@opentelemetry/instrumentation-grpc/build/src/grpc-js/index';
 
 async function start<T>(span: Span, fn: (span: Span) => Promise<T>): Promise<T> {
     try {
@@ -55,7 +54,7 @@ provider.register({
     contextManager: new ZoneContextManager()
 });
 registerInstrumentations({
-    instrumentations: [new GrpcJsInstrumentation('@opentelemetry/instrumentation-grpc', '1.0', {})]
+    instrumentations: []
 });
 
 const tracer = new MyTracer(provider.getTracer('elfin'));
@@ -73,14 +72,43 @@ function makeRpcCall() {
     }
 }
 
+function RunningClock(props: {}): ReactElement {
+    const [time, setTime] = useState(new Date());
+
+    useEffect(() => {
+        setTimeout(() => {
+            setTime(new Date());
+        }, 1000);
+        return () => {
+            console.log('remove time');
+        };
+    });
+
+    return <p>{time.toLocaleTimeString()}</p>;
+}
+
+function MyView(props: {count?: number}): ReactElement {
+    const [count, setCount] = useState(props.count != undefined ? props.count! : 0);
+
+    return <div>
+        <RunningClock/>
+        <p>{count}</p>
+        <button type='button' onClick={e => {
+            setCount(count + 1);
+        }}>Press</button>
+    </div>;
+}
+
 function setUpButton() {
-    render(<button type='button' onClick={ (e) => tracer.listen('ButtonClick', async _ => {
-        performance.mark('a');
-        let response = await makeRpcCall();
-        performance.mark('b');
-        let measurement = performance.measure('measure', 'a', 'b');
-        console.log(measurement.duration);
-    })}>Button</button>, document.getElementById('react-dom'));
+    // render(<button type='button' onClick={ (e) => tracer.listen('ButtonClick', async _ => {
+    //     performance.mark('a');
+    //     let response = await makeRpcCall();
+    //     performance.mark('b');
+    //     let measurement = performance.measure('measure', 'a', 'b');
+    //     console.log(measurement.duration);
+    // })}>Button</button>, document.getElementById('react-dom'));
+
+    render(<MyView/>, document.getElementById('react-dom'));
 }
 
 if (require.main === module) {
