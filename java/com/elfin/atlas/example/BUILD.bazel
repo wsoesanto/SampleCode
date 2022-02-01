@@ -3,13 +3,25 @@ load("@io_bazel_rules_kotlin//kotlin:jvm.bzl", "kt_jvm_binary", "kt_jvm_library"
 kt_jvm_binary(
     name = "Main",
     srcs = ["Main.kt"],
+    args = [
+        "-Dlog4j.configuration=java/com/elfin/atlas/example/log4j.properties",
+    ],
+    data = [
+        "log4j.properties",
+    ],
     main_class = "com.elfin.atlas.example.Main",
     runtime_deps = [
+<<<<<<< Updated upstream
         # For SL4J
         "@maven//:org_apache_logging_log4j_log4j_slf4j_impl",
         # For Flogger
         "@maven//:com_google_flogger_flogger_log4j2_backend",
         "@maven//:io_grpc_grpc_netty",
+=======
+        "@flogger//api:system_backend",
+        "@maven//:io_grpc_grpc_netty",
+        "@maven//:org_slf4j_slf4j_log4j12",
+>>>>>>> Stashed changes
     ],
     deps = [
         ":simple_component",
@@ -32,6 +44,7 @@ kt_jvm_binary(
 kt_jvm_binary(
     name = "Client",
     srcs = ["Client.kt"],
+<<<<<<< Updated upstream
     main_class = "com.elfin.atlas.example.Main",
     runtime_deps = [
         # For SL4J
@@ -39,6 +52,19 @@ kt_jvm_binary(
         # For Flogger
         "@maven//:com_google_flogger_flogger_log4j2_backend",
         "@maven//:io_grpc_grpc_netty",
+=======
+    args = [
+        "-Dlog4j.configuration=java/com/elfin/atlas/example/log4j.properties",
+    ],
+    data = [
+        "log4j.properties",
+    ],
+    main_class = "com.elfin.atlas.example.Main",
+    runtime_deps = [
+        "@flogger//api:system_backend",
+        "@maven//:io_grpc_grpc_netty",
+        "@maven//:org_slf4j_slf4j_log4j12",
+>>>>>>> Stashed changes
     ],
     deps = [
         ":simple_component",
@@ -74,6 +100,7 @@ kt_jvm_library(
         "//:dagger",
     ],
 )
+<<<<<<< Updated upstream
 
 kt_jvm_binary(
     name = "Beam",
@@ -90,3 +117,5 @@ kt_jvm_binary(
         "@maven//:org_apache_beam_beam_sdks_java_core"
     ],
 )
+=======
+>>>>>>> Stashed changes
