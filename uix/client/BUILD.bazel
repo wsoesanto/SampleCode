@@ -1,0 +1,14 @@
+load("@npm//@bazel/typescript:index.bzl", "ts_project")
+
+ts_project(
+    name = "deps",
+    srcs = [
+        "deps.ts",
+    ],
+    link_workspace_root = True,
+    composite = True,
+    tsconfig = "//:tsconfig",
+    visibility = [
+        "//visibility:public",
+    ],
+)

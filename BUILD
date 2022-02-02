@@ -20,14 +20,6 @@ ts_config(
         "//visibility:public",
     ],
     deps = [
-        "@npm//gts:gts__files",
+        # "@npm//gts:gts__files",
     ],
 )
-<<<<<<< Updated upstream
-=======
-
-filegroup(
-    name = "gitignore",
-    srcs = glob(["third_party/*/.gitgignore"]),
-)
->>>>>>> Stashed changes

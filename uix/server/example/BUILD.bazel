@@ -8,11 +8,13 @@ ts_project(
         "main.tsx",
     ],
     link_workspace_root = True,
+    composite = True,
     tsconfig = "//:tsconfig",
     visibility = [
         "//visibility:public",
     ],
     deps = [
+        "//uix/client:deps",
         ":serving_context_ts_proto",
         "@npm//@bazel/runfiles",
         "@npm//@types/express",

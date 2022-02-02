@@ -5,14 +5,6 @@ workspace(
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
-<<<<<<< Updated upstream
-=======
-#android_sdk_repository(
-#    name = "androidsdk",  # Required. Name *must* be "androidsdk".
-#     path = "/Users/willys/Library/Android/sdk",  # Optional. Can be omitted if `ANDROID_HOME` environment variable is set.
-#)
-
->>>>>>> Stashed changes
 git_repository(
     name = "io_grpc_grpc_java",
     tag = "v1.43.2",
@@ -49,15 +41,11 @@ load(
 
 swift_rules_extra_dependencies()
 
-<<<<<<< Updated upstream
 RULES_JVM_EXTERNAL_TAG = "2.7"
 
 RULES_JVM_EXTERNAL_SHA = "f04b1466a00a2845106801e0c5cec96841f49ea4e7d1df88dc8e4bf31523df74"
 
 http_archive(
-=======
-git_repository(
->>>>>>> Stashed changes
     name = "rules_jvm_external",
     sha256 = RULES_JVM_EXTERNAL_SHA,
     strip_prefix = "rules_jvm_external-%s" % RULES_JVM_EXTERNAL_TAG,
@@ -113,7 +101,7 @@ git_repository(
 
 git_repository(
     name = "build_bazel_rules_nodejs",
-    tag = "4.5.0",
+    tag = "4.6.1",
     remote = "https://github.com/bazelbuild/rules_nodejs",
 )
 
@@ -142,7 +130,7 @@ rules_proto_toolchains()
 git_repository(
     name = "com_github_grpc_grpc_web",
     remote = "https://github.com/grpc/grpc-web",
-    tag = "1.2.1",
+    tag = "1.3.1",
 )
 
 load("@build_bazel_rules_nodejs//packages/labs:package.bzl", "npm_bazel_labs_dependencies")
@@ -240,13 +228,13 @@ http_archive(
     urls = ["https://github.com/madler/zlib/archive/v1.2.11.tar.gz"],
 )
 
-load("@build_bazel_rules_nodejs//:package.bzl", "rules_nodejs_dev_dependencies")
+# load("@build_bazel_rules_nodejs//:package.bzl", "rules_nodejs_dev_dependencies")
 
-rules_nodejs_dev_dependencies()
+# rules_nodejs_dev_dependencies()
 
 git_repository(
     name = "build_bazel_rules_typescript",
-    tag = "4.5.0",
+    tag = "4.6.1",
     remote = "https://github.com/bazelbuild/rules_nodejs",
     strip_prefix = "third_party/github.com/bazelbuild/rules_typescript",
 )
@@ -283,11 +271,7 @@ load("@io_bazel_rules_go//go:deps.bzl", "go_register_toolchains", "go_rules_depe
 
 go_rules_dependencies()
 
-<<<<<<< Updated upstream
 go_register_toolchains(go_version = "1.15.5")
-=======
-go_register_toolchains()
->>>>>>> Stashed changes
 
 http_archive(
     name = "com_github_gflags_gflags",
@@ -336,19 +320,11 @@ load("@io_bazel_rules_kotlin//kotlin:repositories.bzl", "kotlin_repositories")
 
 kotlin_repositories(
     compiler_release = {
-<<<<<<< Updated upstream
-        "urls": [
-            "https://github.com/JetBrains/kotlin/releases/download/v1.5.0/kotlin-compiler-1.5.0.zip",
-        ],
-        "sha256": "0343fc1f628fec1beccc9e534d2b8b7a0f8964b97e21563585d44d6d928ed1b7",
-    },
-=======
        "urls": [
            "https://github.com/JetBrains/kotlin/releases/download/v1.5.31/kotlin-compiler-1.5.31.zip",
        ],
        "sha256": "661111286f3e5ac06aaf3a9403d869d9a96a176b62b141814be626a47249fe9e",
    },
->>>>>>> Stashed changes
 )
 
 load("@io_bazel_rules_kotlin//kotlin:core.bzl", "kt_register_toolchains")
@@ -374,8 +350,6 @@ http_archive(
     urls = ["https://github.com/google/bazel-common/archive/4a8d451e57fb7e1efecbf9495587a10684a19eb2.zip"],
 )
 
-<<<<<<< Updated upstream
-=======
 load("@google_bazel_common//:workspace_defs.bzl", "google_common_workspace_rules")
 
 #google_common_workspace_rules()
@@ -385,7 +359,6 @@ android_sdk_repository(
     api_level = 32,
 )
 
->>>>>>> Stashed changes
 http_archive(
     name = "openjdk8",
     build_file_content = """
@@ -409,27 +382,3 @@ exports_files(["WORKSPACE"], visibility = ["//visibility:public"])
 load("@io_grpc_grpc_java//:repositories.bzl", "grpc_java_repositories")
 
 grpc_java_repositories()
-
-<<<<<<< Updated upstream
-#ATS_COMMIT = "8c41148e623d33ae38e1029b39576893429aede5"
-#
-#http_archive(
-#    name = "android_test_support",
-#    strip_prefix = "android-test-%s" % ATS_COMMIT,
-#    urls = ["https://github.com/android/android-test/archive/%s.tar.gz" % ATS_COMMIT],
-#)
-#
-#load("@android_test_support//:repo.bzl", "android_test_repositories")
-#
-#android_test_repositories()
-=======
-ATS_COMMIT = "8c41148e623d33ae38e1029b39576893429aede5"
-
-http_archive(
-    name = "android_test_support",
-    strip_prefix = "android-test-%s" % ATS_COMMIT,
-    urls = ["https://github.com/android/android-test/archive/%s.tar.gz" % ATS_COMMIT],
-)
-load("@android_test_support//:repo.bzl", "android_test_repositories")
-android_test_repositories()
->>>>>>> Stashed changes

@@ -8,11 +8,7 @@ build --host_javacopt=-g
 
 # build --java_toolchain=@bazel_tools//tools/jdk:toolchain_java8 --host_java_toolchain=@bazel_tools//tools/jdk:toolchain_java8
 build --javacopt="-Adagger.fullBindingGraphValidation=ERROR"
-<<<<<<< Updated upstream
-build --experimental_google_legacy_api --incompatible_java_common_parameters=false
-=======
 build --experimental_google_legacy_api
->>>>>>> Stashed changes
 
 # Support for debugging NodeJS tests
 # Add the Bazel option `--config=debug` to enable this
@@ -50,10 +46,4 @@ build:debug --compilation_mode=dbg
 # Ensure clang is used, by default, over any other C++ installation (e.g. gcc).
 build --client_env=CC=clang
 # We require C++17, but bazel defaults to C++0x (pre-C++11).
-<<<<<<< Updated upstream
 build --cxxopt=-std=c++17 --host_cxxopt=-std=c++17 --client_env=BAZEL_CXXOPTS=-std=c++17
-=======
-build --cxxopt=-std=c++17 --host_cxxopt=-std=c++17 --client_env=BAZEL_CXXOPTS=-std=c++17
-
---android_aapt=aapt2
->>>>>>> Stashed changes

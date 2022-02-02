@@ -19,6 +19,7 @@ ts_project(
         "main.tsx",
     ],
     link_workspace_root = True,
+    composite = True,
     tsconfig = "//:tsconfig",
     visibility = [
         "//visibility:public",
@@ -74,6 +75,7 @@ ts_project(
     srcs = [
         "webpack.config.ts",
     ],
+    composite = True,
     link_workspace_root = True,
     tsconfig = "//:tsconfig",
     deps = [

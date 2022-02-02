@@ -13,7 +13,11 @@ const config: webpack.Configuration = {
         SampleCode: ans,
       },
       preferAbsolute: true,
-  }
+  },
+  externals: {
+    'react': 'React', // Case matters here 
+    'react-dom' : 'ReactDOM' // Case matters here
+  } 
 };
 
 // console.log('gilayalu');
